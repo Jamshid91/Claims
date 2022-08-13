@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/plugins/tailwind.css">
+    <link rel="stylesheet" href="assets/styles/plugins/ckin.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+</head>
+<body class="relative">
+    <header class="header">
+        <div class="container flex items-center justify-between">
+            <div class="logo lg:w-1/6 md:w-1/3 sm:w-1/2">
+                <a href="./index.html" class="lg:w-full">
+                    <img loading="lazy" src="assets/img/png/logo.png" alt="logo.png" class="lg:w-full">
+                </a>
+            </div>
+            <ul class="flex items-center justify-between w-2/5 lg:w-1/2 md:hidden">
+                <li class=""><a href="./public/our_team.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Join Our Team</a></li>
+                <li class=""><a href="./public/file_a_claim.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">File A Claim</a></li>
+                <li class=""><a href="./public/types_of_damage.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Type of Damages</a></li>
+                <li class=""><a href="./public/contact_us.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Contact Us</a></li>
+                <li class=""><a href="#" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">More</a></li>
+            </ul>
+            <div class="flex items-center md:hidden">
+                <a href="tel:18772743453" class="flex items-center mr-7">
+                    <svg class="mr-4 md:mr-1" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#25ADE0" stroke-width="1.8" stroke-miterlimit="10"/>
+                        <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="flex flex-col lg:hidden">
+                        <span class="text-xs text-dark font-normal">Have a question?</span>
+                        <span class="text-primary font-bold">1.877.274.3453</span>
+                    </p>
+                </a>
+                <a href="#"><button class="header__btn bg-orange text-white uppercase text-xs font-bold">New Claim</button></a>
+            </div>
+            <div class="menu-burger hidden md:flex items-center justify-center flex-col">
+                <div class="flex items-end justify-center flex-col">
+                    <span class="line"></span>
+                    <span class="line line-middle"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu absolute top-0 z-50 w-full h-full">
+        <div class="mobile-menu-item bg-primary text-white w-full h-auto">
+            <div class="text-right">
+                <svg class="close-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L11.25 11.25M20.5 20.5L11.25 11.25M11.25 11.25L20.5 2L2 20.5" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <ul class="text-center">
+                <li class="mobile-menu__list"><a href="./public/our_team.html" class="text-white text-2xl font-bold">Join Our Team</a></li>
+                <li class="mobile-menu__list"><a href="./public/file_a_claim.html" class="text-white text-2xl font-bold">File A Claim</a></li>
+                <li class="mobile-menu__list"><a href="./public/types_of_damage.html" class="text-white text-2xl font-bold">Type of Damages</a></li>
+                <li class="mobile-menu__list"><a href="./public/contact_us.html" class="text-white text-2xl font-bold">Contact Us</a></li>
+                <li class="mobile-menu__list"><a href="#" class="text-white text-2xl font-bold">More</a></li>
+            </ul>
+            <a href="tel:18772743453" class="text-white flex items-center justify-center mt-16">
+                <svg class="mr-3" width="46" height="46" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#fff" stroke-width="1.8" stroke-miterlimit="10"/>
+                    <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="">
+                    <span class="text-lg">Have a question?</span>
+                    <p class="text-2xl font-bold">1.877.274.3453</p>
+                </div>
+            </a>
+            <a href="#"><button class="mobile-menu__btn bg-orange text-white uppercase text-xl font-bold w-full">New Claim</button></a>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <div class="home relative">
+        <div class="container flex justify-start items-center h-full sm:items-start">
+            <div class="">
+                <p class="text-white uppercase font-normal xl:text-xs">#1 Rated Residential and Commercial Claims Adjuster</p>
+                <p class="home__title text-white font-extrabold sm:hidden">Adjusters that <br> won't be denied!</p>
+                <p class="home__title text-white font-extrabold hidden sm:block">Adjusters that won't be denied!</p>
+                <p class="text-white  xl:text-xs sm:hidden">Your Insurance Company hired A Staff of Adjusters to Protect their <br>interest; which is why you should too.</p>
+                <p class="text-white  xl:text-xs hidden sm:block">Your Insurance Company hired A Staff of Adjusters to Protect their interest; which is why you should too.</p>
+                <div class="home-buttons sm:flex sm:justify-center">
+                    <a href="#"><button class="home__btn learn_more text-white uppercase text-sm font-bold">learn more</button></a>
+                    <a href="#" class="sm:hidden"><button class="home__btn contact_us text-white uppercase text-sm font-bold">contact us</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End home -->
+
+    <div class="our-company">
+        <div class="container flex justify-between md:flex-col md:justify-center md:items-start">
+            <div class="w-1/3 text-right mr-5 md:text-left md:w-full">
+                <p class="uppercase text-primary text-xl font-normal md:text-sm">about our company</p>
+                <p class="our-company__title text-dark font-bold mt-2">Why Hire iFile Public Insurance Adjuster</p>
+            </div>
+            <div class="w-2/3 md:w-full">
+                <p class="text-dark font-normal text-base"> Have you suffered a pipe leak, kitchen leak, bathroom leak, roof leak, HVAC leak, mold damage, fire damage, water damage, hail damage, lightning damage, sinkholes, commercial property damage, theft vandalism, storm or hurricane damage your home? Do you suffer from the consequences and you have no idea how to get a fair settlement to be able to repair your house?</p>
+                <p class="text-dark font-normal text-base mt-2">Let us do your work. We inspect your home, analyze all the information and put together an estimate. Then we file the documents to your insurance company and negotiate your settlement.</p>
+                <p class="text-dark font-normal text-base mt-2">Contact iFile Claims and your claim is going to be in good hands because we get the most out of it with our team of experts. With us, you never have to settle for less because we always make sure that you receive what you are entitled to under your policy.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End our-company -->
+
+    <div class="more">
+        <img loading="lazy" src="assets/img/png/more.png" alt="" class="w-full hidden sm:block">
+        <div class="container flex justify-between items-center md:flex-col-reverse">
+            <div class="w-2/5 lg:w-1/2 md:w-full md:mt-5">
+                <p class="uppercase text-primary text-xl font-normal md:text-sm">More about us</p>
+                <p class="more__title text-dark font-bold mt-2">Your Insurance Company, While Honest, Utilizes The Services Of An Employed Or Subcontractor Claim Adjuster</p>
+                <p class="text-dark font-normal text-base mt-2">Your Insurance Company Will Send A Skilled Representative To Assess And Evaluate Your Property Loss. This Representative Is Employed By Your Insurance Company, Having Their Employer’s Best Interest In Mind. Their Goal Is To Settle Your Claim For As Little As Possible.</p>
+                <p class="text-dark font-normal text-base mt-2">A Benefit Of A Public Insurance Claims Adjuster In Florida Is That They Add A Team Of Individuals To Your Side, And Help Even The Sides. Also Some Adjusting Groups And Firms May Have A Financial Interest In The Insurance Company They Represent.</p>
+                <p class="text-dark font-normal text-base mt-2">“…Citizens Property Insurance Corporation Claims Data Found That Cases Took Longer To Reach A Settlement But Received Higher Payments When Claimants Used Public Adjusters For Claims Filed In 2008 And 2009. Public Adjusters Represented Policyholders In 26% Of Non-Catastrophe And 39% Of Catastrophe Claims Filed During This Period.</p>
+            </div>
+            <div class="w-2/5 md:w-full sm:hidden">
+                <img loading="lazy" src="assets/img/png/more.png" alt="" class="w-full">
+            </div>
+        </div>
+    </div>
+    <!-- End more -->
+
+    <div class="contact-us">
+        <div class="container">
+            <div class="ml-auto mr-auto w-5/6 text-center">
+                <p class="uppercase text-primary text-xl sm:text-sm">we are waiting for you</p>
+                <p class="contact-us__title text-dark font-bold sm:text-2xl">Contact us today</p>
+                <p class="text-dark-light text-2xl sm:text-base">However your accident was caused, your claim can be reviewed by us free of charge. For every case we take on we give £10 to our chosen charity, SCARD</p>
+                <a href="#">
+                    <button class="contact-us__btn uppercase text-white font-bold text-lg">review my claim now</button>
+                </a>
+                <p class="text-dark-light text-2xl sm:text-xl">or call us on</p>
+                <a href="tel:1 877 274 3453" class="flex items-center justify-center text-primary text-5xl font-bold mt-7 sm:text-3xl sm:mt-3">
+                    <svg class="mr-3 sm:w-7" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                    </svg>
+                    1.877.274.3453
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End contact-us -->
+
+    <div class="our-company">
+        <img loading="lazy" src="assets/img/png/our-company.png" alt="" class="w-full hidden md:block">
+        <div class="container flex md:flex-col">
+            <div class="w-1/2 md:w-full">
+                <img loading="lazy" src="assets/img/png/our-company.png" alt="" class="w-full md:hidden block">
+            </div>
+            <div class="w-1/2 md:w-full pl-5">
+                <p class="uppercase text-primary text-xl sm:text-sm">our company</p>
+                <p class="text-dark font-bold text-3xl sm:text-2xl">How can we help you</p>
+                <p class="mt-4 font-normal text-dark"> <span class="font-bold">iFile Claims Public Adjusters</span> are licensed professionals whose job is to advocate for you, the policyholder. In the state of Florida, these professionals can legally represent your rights during the insurance claim process. Why does everyone need that? Because insurance companies employ their own adjusters to settle your claim in the best interests of their company.</p>
+                <p class="font-bold text-dark my-2">What does that mean?</p>
+                <p class="text-dark">The least money they give you, the better it is for them. This is when public adjusters come into the picture. These experts fight your fight to maximize your settlement. They help you every step of the way, so you don’t have to settle for less than what you deserve. After hiring iFile Claims you never have to pay out of your own pocket.</p>
+                <p class="text-dark mt-2">We operate on contingency, meaning if we are unable to recover from the Insurance Company there will be no fee assessed. We take all the risk by accepting no upfront fees, so it is in our interest to get you the best deal possible. That’s why we work restless to get you appraisals that can ensure a much better outcome for your claim</p>
+            </div>
+        </div>
+    </div>
+    <!-- End our-company -->
+
+    <div class="video relative">
+        <img loading="lazy" src="assets/img/png/video-bg.png" alt="" class="video-bg absolute w-full">
+        <div class="container">
+            <video poster="assets/img/png/video.png" 
+            src="assets/video/v.mp4" 
+            data-overlay="1" 
+            data-ckin="compact"
+            class="utilities__video"
+            loop="loop"
+            >
+            </video>
+        </div>
+    </div>
+    <!-- End video -->
+
+    <div class="examples">
+        <div class="container">
+            <p class="text-center text-primary text-xl uppercase sm:text-sm sm:text-left">EXAMPLES OF </p>
+            <p class="examples__title text-dark font-bold text-center poppins sm:text-left">RESIDENTIAL CLAIM COVERAGES</p>
+
+            <div class="flex justify-between flex-wrap sm:justify-center">
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_11_1539)">
+                                            <path d="M21.8555 23.3059H26.5019V27.9524H21.8555V23.3059Z" fill="white"/>
+                                            <path d="M30.2512 21.2754L18.5 12.3904L6.7491 21.2752C5.88396 21.954 4.86799 22.3498 3.78735 22.4335V33.8505C3.78735 34.4491 4.27268 34.9344 4.87132 34.9344H8.33024V22.2219C8.33024 21.6233 8.81557 21.138 9.41421 21.138H16.2286C16.8272 21.138 17.3125 21.6233 17.3125 22.2219V34.9344H32.1287C32.7274 34.9344 33.2127 34.4491 33.2127 33.8505V22.4322C32.1392 22.3453 31.1022 21.9426 30.2512 21.2754ZM19.6875 22.2219C19.6875 21.6233 20.1728 21.138 20.7715 21.138H27.5858C28.1845 21.138 28.6698 21.6233 28.6698 22.2219V29.0363C28.6698 29.6349 28.1845 30.1203 27.5858 30.1203H20.7715C20.1728 30.1203 19.6875 29.6349 19.6875 29.0363V22.2219Z" fill="white"/>
+                                            <path d="M10.4982 23.3059H15.1446V34.9344H10.4982V23.3059Z" fill="white"/>
+                                            <path d="M35.7438 14.3238C35.7368 14.3182 35.7298 14.3127 35.7227 14.3072L20.5788 2.79502C19.3527 1.82256 17.6474 1.82256 16.4213 2.79502L1.27736 14.3072C1.27028 14.3126 1.26327 14.3181 1.25626 14.3238C0.558402 14.8821 0.119614 15.6787 0.0209011 16.567C-0.0778118 17.4553 0.17533 18.3289 0.733643 19.0268C1.29203 19.7246 2.08867 20.1634 2.97687 20.2621C3.10268 20.276 3.2282 20.283 3.35293 20.283C4.10383 20.283 4.82741 20.0321 5.4241 19.5592L18.4999 9.67255L31.5759 19.5592C32.1649 20.0258 32.9016 20.2826 33.652 20.2826C34.6748 20.2826 35.6278 19.8249 36.2663 19.0267C36.8247 18.3289 37.0778 17.4553 36.9791 16.567C36.8803 15.6787 36.4416 14.882 35.7438 14.3238Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_11_1539">
+                                            <rect width="37" height="37" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE A</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">DWELLING</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damages to Dwelling and the following:</p>
+                                    <li>Structures</li>
+                                    <li>Rooms</li>
+                                    <li>Fireplaces</li>
+                                    <li>Flooring</li>
+                                    <li>Attached garage</li>
+                                    <li>Materials and supplies needed to bring your home to its pre-loss conditions</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium">*Not available on HO6 Policies (Condominiums)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <img loading="lazy" src="assets/img/png/cover.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE B</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">OTHER STRUCTURES</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers structures that are NOT attached to your home such as:</p>
+                                    <li>Fences</li>
+                                    <li>Sheds</li>
+                                    <li>Detached garages</li>
+                                    <li>Swimming pools</li>
+                                    <li>Greenhouse</li>
+                                    <li>Driveways</li>
+                                    <li>Guest cottages</li>
+                                    <li>Gazebos</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31.4718 2.2633C30.2734 1.06495 28.0784 0.0834961 26.5938 0.0834961C25.1091 0.0834961 23.896 0.0834961 23.896 0.0834961C23.896 3.06427 21.4808 5.47903 18.5 5.47903C15.5192 5.47903 13.104 3.06427 13.104 0.0834961C13.104 0.0834961 11.8909 0.0834961 10.4062 0.0834961C8.92164 0.0834961 6.72657 1.06495 5.52823 2.2633L0 7.79153L6.16652 13.9585L7.70848 12.4165V30.9165H29.2915V12.4165L30.8335 13.9585L37 7.79153L31.4718 2.2633Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE C</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">PERSONAL PROPERTY</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damage or loss to your personal property such as:</p>
+                                    <li>Households contents</li>
+                                    <li>Clothing</li>
+                                    <li>Personal belongings own or use by you and your family</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1013 21.7904C20.095 21.7883 20.0893 21.7862 20.0832 21.7839V24.0126C20.5234 23.8178 20.784 23.4032 20.8499 23.011C20.8855 22.7993 20.9367 22.0857 20.1013 21.7904Z" fill="white"/>
+                                            <path d="M19.584 15.1758C16.197 15.1758 13.4414 17.9313 13.4414 21.3184C13.4414 24.7054 16.197 27.4609 19.584 27.4609C22.971 27.4609 25.7266 24.7054 25.7266 21.3184C25.7266 17.9313 22.971 15.1758 19.584 15.1758ZM21.919 23.1908C21.775 24.0468 21.1136 24.9147 20.0833 25.1489V25.6543C20.0833 25.9537 19.8407 26.1963 19.5413 26.1963C19.2419 26.1963 18.9993 25.9537 18.9993 25.6543V25.1979C18.4789 25.1617 18.0623 25.0353 17.4619 24.6426C17.2114 24.4787 17.1412 24.1429 17.305 23.8923C17.4688 23.6418 17.8047 23.5715 18.0553 23.7354C18.4337 23.9829 18.6631 24.0772 18.9993 24.1106V21.3578C18.5869 21.1718 18.2826 20.9944 18.0357 20.8008C17.5444 20.4155 17.3206 19.7448 17.4514 19.0504C17.5944 18.2912 18.1222 17.6874 18.8287 17.4745C18.8865 17.4571 18.9431 17.4421 18.9993 17.4283V16.9824C18.9993 16.683 19.2419 16.4404 19.5413 16.4404C19.8407 16.4404 20.0833 16.683 20.0833 16.9824V17.3656C20.6977 17.4551 21.1296 17.752 21.3346 17.9875C21.5313 18.2132 21.5077 18.5555 21.2819 18.7521C21.057 18.948 20.7163 18.9254 20.5192 18.7017C20.5092 18.6914 20.3654 18.5492 20.0833 18.4722V20.6308C20.2105 20.6784 20.3379 20.7245 20.4626 20.7686C21.5311 21.1462 22.1027 22.097 21.919 23.1908Z" fill="white"/>
+                                            <path d="M18.5166 19.2513C18.4618 19.542 18.5356 19.8155 18.7046 19.9481C18.7904 20.0153 18.8901 20.0804 18.9992 20.1437V18.5703C18.7132 18.7176 18.5627 19.0069 18.5166 19.2513Z" fill="white"/>
+                                            <path d="M32.6641 34.1094C32.6641 35.3067 33.6347 36.2773 34.832 36.2773C36.0293 36.2773 37 35.3067 37 34.1094V22.4023H32.6641V34.1094Z" fill="white"/>
+                                            <path d="M35.6835 0.750672C33.1249 1.3465 31.2188 3.6413 31.2188 6.38132V19.1504C31.2188 19.749 31.7041 20.2344 32.3027 20.2344H37V1.80951C37 1.1172 36.3578 0.593639 35.6835 0.750672Z" fill="white"/>
+                                            <path d="M10.8398 1.80664C10.8398 1.20799 10.3545 0.722656 9.75586 0.722656C9.15721 0.722656 8.67188 1.20799 8.67188 1.80664V7.94922H6.50391V1.80664C6.50391 1.20799 6.01857 0.722656 5.41992 0.722656C4.82127 0.722656 4.33594 1.20799 4.33594 1.80664V7.94922H2.16797V1.80664C2.16797 1.20799 1.68263 0.722656 1.08398 0.722656C0.485336 0.722656 0 1.20799 0 1.80664V9.31829C0 10.9461 0.813566 12.4662 2.16797 13.3691L3.25195 14.0918V34.1094C3.25195 35.3067 4.22255 36.2773 5.41992 36.2773C6.61729 36.2773 7.58789 35.3067 7.58789 34.1094V14.0918L8.67188 13.3691C10.0263 12.4662 10.8398 10.9461 10.8398 9.31829V1.80664Z" fill="white"/>
+                                            <path d="M29.0508 19.1504V9.92352C26.4837 7.78843 23.184 6.50391 19.584 6.50391C17.2218 6.50391 14.9894 7.05768 13.0078 8.04107V9.31829C13.0078 11.6763 11.8365 13.865 9.87452 15.173L9.75586 15.2521V32.4021C12.3711 34.7228 15.8126 36.1328 19.584 36.1328C23.9021 36.1328 27.7883 34.2848 30.4961 31.337V21.8528C29.6252 21.2687 29.0508 20.2755 29.0508 19.1504ZM19.584 29.6289C15.0015 29.6289 11.2734 25.9008 11.2734 21.3184C11.2734 16.7359 15.0015 13.0078 19.584 13.0078C24.1664 13.0078 27.8945 16.7359 27.8945 21.3184C27.8945 25.9008 24.1664 29.6289 19.584 29.6289Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE D</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">LIVING EXPENSES</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damages to living expenses:</p>
+                                    <li>Temporary hotel, motel or apartment stay</li>
+                                    <li>Moving expenses</li>
+                                    <li>Food</li>
+                                    <li>Storage expenses</li>
+                                    <li>Laundry</li>
+                                    <li>Driveways</li>
+                                    <li>Transportation fees</li>
+                                    <li>Parking fees</li>
+                                    <li>Pet fees</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium">*Coverage available on Tenant <br> insurance (DP3)*</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End RESIDENTIAL CLAIM COVERAGES -->
+
+    <div class="examples-commercial">
+        <div class="container">
+            <p class="text-center text-primary text-xl uppercase sm:text-sm">EXAMPLES OF </p>
+            <p class="examples__title text-dark font-bold text-center poppins">COMMERCIAL CLAIM COVERAGES</p>
+
+            <div class="flex justify-between flex-wrap sm:justify-center">
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_11_1539)">
+                                            <path d="M21.8555 23.3059H26.5019V27.9524H21.8555V23.3059Z" fill="white"/>
+                                            <path d="M30.2512 21.2754L18.5 12.3904L6.7491 21.2752C5.88396 21.954 4.86799 22.3498 3.78735 22.4335V33.8505C3.78735 34.4491 4.27268 34.9344 4.87132 34.9344H8.33024V22.2219C8.33024 21.6233 8.81557 21.138 9.41421 21.138H16.2286C16.8272 21.138 17.3125 21.6233 17.3125 22.2219V34.9344H32.1287C32.7274 34.9344 33.2127 34.4491 33.2127 33.8505V22.4322C32.1392 22.3453 31.1022 21.9426 30.2512 21.2754ZM19.6875 22.2219C19.6875 21.6233 20.1728 21.138 20.7715 21.138H27.5858C28.1845 21.138 28.6698 21.6233 28.6698 22.2219V29.0363C28.6698 29.6349 28.1845 30.1203 27.5858 30.1203H20.7715C20.1728 30.1203 19.6875 29.6349 19.6875 29.0363V22.2219Z" fill="white"/>
+                                            <path d="M10.4982 23.3059H15.1446V34.9344H10.4982V23.3059Z" fill="white"/>
+                                            <path d="M35.7438 14.3238C35.7368 14.3182 35.7298 14.3127 35.7227 14.3072L20.5788 2.79502C19.3527 1.82256 17.6474 1.82256 16.4213 2.79502L1.27736 14.3072C1.27028 14.3126 1.26327 14.3181 1.25626 14.3238C0.558402 14.8821 0.119614 15.6787 0.0209011 16.567C-0.0778118 17.4553 0.17533 18.3289 0.733643 19.0268C1.29203 19.7246 2.08867 20.1634 2.97687 20.2621C3.10268 20.276 3.2282 20.283 3.35293 20.283C4.10383 20.283 4.82741 20.0321 5.4241 19.5592L18.4999 9.67255L31.5759 19.5592C32.1649 20.0258 32.9016 20.2826 33.652 20.2826C34.6748 20.2826 35.6278 19.8249 36.2663 19.0267C36.8247 18.3289 37.0778 17.4553 36.9791 16.567C36.8803 15.6787 36.4416 14.882 35.7438 14.3238Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_11_1539">
+                                            <rect width="37" height="37" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE A</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">DWELLING</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damages to Dwelling and the following:</p>
+                                    <li>Business equipment loss</li>
+                                    <li>Damage or loss due to wind, hail, fire or theft</li>
+                                    <li>Accidental damage of property</li>
+                                    <li>Business Interruption (lost business income)</li>
+                                    <li>Electronic data</li>
+                                    <li>Interruption of computer operations</li>
+                                    <li> Valuable papers and records</li>
+                                    <li>Forgery or alteration</li>
+                                    <li>Accounts receivable</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium">*Earthquakes and floods typically are NOT covered by commercial property insurance, unless they are added to <br> the policy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <img loading="lazy" src="assets/img/png/cover.png" alt="">
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE B</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">OTHER STRUCTURES</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers structures that are NOT attached to your home such as:</p>
+                                    <li>Commercial property insurance is not a standard product. Coverage may differ in limits, how assets are valued, included or excluded items and perils.</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="31" viewBox="0 0 37 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31.4718 2.2633C30.2734 1.06495 28.0784 0.0834961 26.5938 0.0834961C25.1091 0.0834961 23.896 0.0834961 23.896 0.0834961C23.896 3.06427 21.4808 5.47903 18.5 5.47903C15.5192 5.47903 13.104 3.06427 13.104 0.0834961C13.104 0.0834961 11.8909 0.0834961 10.4062 0.0834961C8.92164 0.0834961 6.72657 1.06495 5.52823 2.2633L0 7.79153L6.16652 13.9585L7.70848 12.4165V30.9165H29.2915V12.4165L30.8335 13.9585L37 7.79153L31.4718 2.2633Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE C</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">PERSONAL PROPERTY</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damage or loss to your personal property such as:</p>
+                                    <li>Commercial property insurance is not a standard product. Coverage may differ in limits, how assets are valued, included or excluded items and perils.</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-border">
+                        <div class="card-item flex flex-col justify-between">
+                            <div class="">
+                                <div class="flex justify-end">
+                                    <div class="card-icon">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1013 21.7904C20.095 21.7883 20.0893 21.7862 20.0832 21.7839V24.0126C20.5234 23.8178 20.784 23.4032 20.8499 23.011C20.8855 22.7993 20.9367 22.0857 20.1013 21.7904Z" fill="white"/>
+                                            <path d="M19.584 15.1758C16.197 15.1758 13.4414 17.9313 13.4414 21.3184C13.4414 24.7054 16.197 27.4609 19.584 27.4609C22.971 27.4609 25.7266 24.7054 25.7266 21.3184C25.7266 17.9313 22.971 15.1758 19.584 15.1758ZM21.919 23.1908C21.775 24.0468 21.1136 24.9147 20.0833 25.1489V25.6543C20.0833 25.9537 19.8407 26.1963 19.5413 26.1963C19.2419 26.1963 18.9993 25.9537 18.9993 25.6543V25.1979C18.4789 25.1617 18.0623 25.0353 17.4619 24.6426C17.2114 24.4787 17.1412 24.1429 17.305 23.8923C17.4688 23.6418 17.8047 23.5715 18.0553 23.7354C18.4337 23.9829 18.6631 24.0772 18.9993 24.1106V21.3578C18.5869 21.1718 18.2826 20.9944 18.0357 20.8008C17.5444 20.4155 17.3206 19.7448 17.4514 19.0504C17.5944 18.2912 18.1222 17.6874 18.8287 17.4745C18.8865 17.4571 18.9431 17.4421 18.9993 17.4283V16.9824C18.9993 16.683 19.2419 16.4404 19.5413 16.4404C19.8407 16.4404 20.0833 16.683 20.0833 16.9824V17.3656C20.6977 17.4551 21.1296 17.752 21.3346 17.9875C21.5313 18.2132 21.5077 18.5555 21.2819 18.7521C21.057 18.948 20.7163 18.9254 20.5192 18.7017C20.5092 18.6914 20.3654 18.5492 20.0833 18.4722V20.6308C20.2105 20.6784 20.3379 20.7245 20.4626 20.7686C21.5311 21.1462 22.1027 22.097 21.919 23.1908Z" fill="white"/>
+                                            <path d="M18.5166 19.2513C18.4618 19.542 18.5356 19.8155 18.7046 19.9481C18.7904 20.0153 18.8901 20.0804 18.9992 20.1437V18.5703C18.7132 18.7176 18.5627 19.0069 18.5166 19.2513Z" fill="white"/>
+                                            <path d="M32.6641 34.1094C32.6641 35.3067 33.6347 36.2773 34.832 36.2773C36.0293 36.2773 37 35.3067 37 34.1094V22.4023H32.6641V34.1094Z" fill="white"/>
+                                            <path d="M35.6835 0.750672C33.1249 1.3465 31.2188 3.6413 31.2188 6.38132V19.1504C31.2188 19.749 31.7041 20.2344 32.3027 20.2344H37V1.80951C37 1.1172 36.3578 0.593639 35.6835 0.750672Z" fill="white"/>
+                                            <path d="M10.8398 1.80664C10.8398 1.20799 10.3545 0.722656 9.75586 0.722656C9.15721 0.722656 8.67188 1.20799 8.67188 1.80664V7.94922H6.50391V1.80664C6.50391 1.20799 6.01857 0.722656 5.41992 0.722656C4.82127 0.722656 4.33594 1.20799 4.33594 1.80664V7.94922H2.16797V1.80664C2.16797 1.20799 1.68263 0.722656 1.08398 0.722656C0.485336 0.722656 0 1.20799 0 1.80664V9.31829C0 10.9461 0.813566 12.4662 2.16797 13.3691L3.25195 14.0918V34.1094C3.25195 35.3067 4.22255 36.2773 5.41992 36.2773C6.61729 36.2773 7.58789 35.3067 7.58789 34.1094V14.0918L8.67188 13.3691C10.0263 12.4662 10.8398 10.9461 10.8398 9.31829V1.80664Z" fill="white"/>
+                                            <path d="M29.0508 19.1504V9.92352C26.4837 7.78843 23.184 6.50391 19.584 6.50391C17.2218 6.50391 14.9894 7.05768 13.0078 8.04107V9.31829C13.0078 11.6763 11.8365 13.865 9.87452 15.173L9.75586 15.2521V32.4021C12.3711 34.7228 15.8126 36.1328 19.584 36.1328C23.9021 36.1328 27.7883 34.2848 30.4961 31.337V21.8528C29.6252 21.2687 29.0508 20.2755 29.0508 19.1504ZM19.584 29.6289C15.0015 29.6289 11.2734 25.9008 11.2734 21.3184C11.2734 16.7359 15.0015 13.0078 19.584 13.0078C24.1664 13.0078 27.8945 16.7359 27.8945 21.3184C27.8945 25.9008 24.1664 29.6289 19.584 29.6289Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="card__title text-2xl font-bold uppercase poppins">COVERAGE D</p>
+                                <p class="text-2xl text-orange font-bold uppercase poppins">LIVING EXPENSES</p>
+                                <ul class="card-info font-medium">
+                                    <p class="my-3">Covers damages to living expenses:</p>
+                                    <li>Commercial property insurance is not a standard product. Coverage may differ in limits, how assets are valued, included or excluded items and perils.</li>
+                                </ul>
+                            </div>
+                            <span class="card__sub-info text-xs font-medium"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End COMMERCIAL CLAIM COVERAGES -->
+
+    <div class="choose">
+        <div class="container">
+            <p class="text-center text-xl text-primary uppercase sm:text-sm sm:text-left">our features</p>
+            <p class="choose__title font-bold text-dark text-center sm:text-left">Why Choose Us</p>
+            <div class="choose_mobile flex justify-between flex-wrap">
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.5664 0.514648V5.85916H25.9109L20.5664 0.514648Z" fill="white"/>
+                                <path d="M16.8091 11.25H13.1909C12.5061 12.4455 11.3497 13.2608 10.0195 13.5119V17.7304C10.0195 20.9094 12.01 23.6709 15 24.6831C17.99 23.6709 19.9805 20.9094 19.9805 17.7304V13.5119C18.6503 13.2608 17.4939 12.4454 16.8091 11.25ZM18.1074 16.9525L14.7929 20.267C14.6212 20.4386 14.3963 20.5245 14.1714 20.5245C13.9465 20.5245 13.7215 20.4387 13.55 20.267L11.8927 18.6097C11.5495 18.2665 11.5495 17.71 11.8927 17.3668C12.2359 17.0235 12.7924 17.0235 13.1357 17.3668L14.1715 18.4025L16.8646 15.7095C17.2078 15.3663 17.7643 15.3663 18.1075 15.7095C18.4506 16.0528 18.4506 16.6092 18.1074 16.9525Z" fill="white"/>
+                                <path d="M19.6875 7.61719C19.2021 7.61719 18.8086 7.22367 18.8086 6.73828V0H6.79688C5.0199 0 3.57422 1.44568 3.57422 3.22266V26.7773C3.57422 28.5543 5.0199 30 6.79688 30H23.2031C24.9801 30 26.4258 28.5543 26.4258 26.7773V7.61719H19.6875ZM21.7383 17.7303C21.7383 19.7022 21.1161 21.5808 19.939 23.1629C18.7619 24.7449 17.1413 25.8807 15.2525 26.4473C15.1702 26.472 15.0851 26.4844 15 26.4844C14.9149 26.4844 14.8298 26.472 14.7475 26.4473C12.8587 25.8807 11.2381 24.7449 10.061 23.1629C8.88393 21.5808 8.26172 19.7022 8.26172 17.7303V12.7148C8.26172 12.2295 8.65523 11.8359 9.14062 11.8359C10.2513 11.8359 11.2498 11.2188 11.7464 10.2255L11.8701 9.97811C12.019 9.68027 12.3233 9.49219 12.6562 9.49219H17.3438C17.6767 9.49219 17.981 9.68027 18.1299 9.97805L18.2536 10.2255C18.7502 11.2188 19.7487 11.8359 20.8594 11.8359C21.3448 11.8359 21.7383 12.2295 21.7383 12.7148V17.7303Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.5664 0.514648V5.85916H25.9109L20.5664 0.514648Z" fill="white"/>
+                                            <path d="M16.8091 11.25H13.1909C12.5061 12.4455 11.3497 13.2608 10.0195 13.5119V17.7304C10.0195 20.9094 12.01 23.6709 15 24.6831C17.99 23.6709 19.9805 20.9094 19.9805 17.7304V13.5119C18.6503 13.2608 17.4939 12.4454 16.8091 11.25ZM18.1074 16.9525L14.7929 20.267C14.6212 20.4386 14.3963 20.5245 14.1714 20.5245C13.9465 20.5245 13.7215 20.4387 13.55 20.267L11.8927 18.6097C11.5495 18.2665 11.5495 17.71 11.8927 17.3668C12.2359 17.0235 12.7924 17.0235 13.1357 17.3668L14.1715 18.4025L16.8646 15.7095C17.2078 15.3663 17.7643 15.3663 18.1075 15.7095C18.4506 16.0528 18.4506 16.6092 18.1074 16.9525Z" fill="white"/>
+                                            <path d="M19.6875 7.61719C19.2021 7.61719 18.8086 7.22367 18.8086 6.73828V0H6.79688C5.0199 0 3.57422 1.44568 3.57422 3.22266V26.7773C3.57422 28.5543 5.0199 30 6.79688 30H23.2031C24.9801 30 26.4258 28.5543 26.4258 26.7773V7.61719H19.6875ZM21.7383 17.7303C21.7383 19.7022 21.1161 21.5808 19.939 23.1629C18.7619 24.7449 17.1413 25.8807 15.2525 26.4473C15.1702 26.472 15.0851 26.4844 15 26.4844C14.9149 26.4844 14.8298 26.472 14.7475 26.4473C12.8587 25.8807 11.2381 24.7449 10.061 23.1629C8.88393 21.5808 8.26172 19.7022 8.26172 17.7303V12.7148C8.26172 12.2295 8.65523 11.8359 9.14062 11.8359C10.2513 11.8359 11.2498 11.2188 11.7464 10.2255L11.8701 9.97811C12.019 9.68027 12.3233 9.49219 12.6562 9.49219H17.3438C17.6767 9.49219 17.981 9.68027 18.1299 9.97805L18.2536 10.2255C18.7502 11.2188 19.7487 11.8359 20.8594 11.8359C21.3448 11.8359 21.7383 12.2295 21.7383 12.7148V17.7303Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Policy Review</p>
+                                </div>
+                                <p class="mt-2">Are you confused about your Residential or Commercial Policy? Do you want to make sure your damages are covered by your insurance? </p>
+                                <p class="mt-2">Taking a deeper look at your policy is always a good idea to avoid later uncertainty. We can review your policy for free.</p>
+                                <p class="mt-2"><span class="primary_text">Contact us</span> today and our adjusters will get back to you shortly</p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_14_521)">
+                                <path d="M4.41174 12.6934V26.4707H7.68451C6.71115 24.8019 6.17645 22.8831 6.17645 20.8906V15.9309H7.03674C8.01133 15.9309 8.80145 15.1408 8.80145 14.1662V13.3059H21.1985V14.1662C21.1985 15.1408 21.9886 15.9309 22.9632 15.9309H23.8235V20.8906C23.8235 22.8831 23.2888 24.8019 22.3154 26.4707H25.5882C25.5882 26.4707 25.5882 16.9271 25.5882 12.6717L15.0007 7.06885C13.3019 7.97126 8.45851 10.5438 4.41174 12.6934Z" fill="white"/>
+                                <path d="M15 0.0625C14.1675 0.538206 0.832471 8.15762 0 8.63332V13.0384C0.519294 12.7626 14.3521 5.41521 14.9992 5.07144L14.9996 5.07162L15 5.07185C19.4406 7.42179 25.4217 10.587 30 13.0098C30 12.5163 30 9.15326 30 8.63332C29.1675 8.15762 15.8325 0.538206 15 0.0625Z" fill="white"/>
+                                <path d="M19.4338 15.9527C19.4338 15.6441 19.4338 15.3789 19.4338 15.0703C16.7139 15.0703 13.2882 15.0703 10.5662 15.0703V15.9527C10.5662 16.9136 9.78446 17.6953 8.82352 17.6953C8.51493 17.6953 8.24975 17.6953 7.94116 17.6953V20.8903C7.94116 24.1331 9.58763 26.9424 12.0256 28.5967C13.499 29.5964 14.8478 29.8821 15 29.9374C15.1516 29.8824 16.5005 29.5967 17.9743 28.5967C20.3842 26.9615 22.0588 24.1654 22.0588 20.8903C22.0588 19.303 22.0588 18.6234 22.0588 17.6954C21.7502 17.6954 21.485 17.6954 21.1765 17.6954C20.2156 17.6953 19.4338 16.9136 19.4338 15.9527ZM14.0641 25.1196L11.5685 22.624L12.8162 21.3761L14.0641 22.624C15.0149 21.6732 16.1762 20.5118 17.1837 19.5044L18.4315 20.7522C17.9912 21.1925 14.5044 24.6793 14.0641 25.1196Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_14_521">
+                                <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">    
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_14_521)">
+                                            <path d="M4.41174 12.6934V26.4707H7.68451C6.71115 24.8019 6.17645 22.8831 6.17645 20.8906V15.9309H7.03674C8.01133 15.9309 8.80145 15.1408 8.80145 14.1662V13.3059H21.1985V14.1662C21.1985 15.1408 21.9886 15.9309 22.9632 15.9309H23.8235V20.8906C23.8235 22.8831 23.2888 24.8019 22.3154 26.4707H25.5882C25.5882 26.4707 25.5882 16.9271 25.5882 12.6717L15.0007 7.06885C13.3019 7.97126 8.45851 10.5438 4.41174 12.6934Z" fill="white"/>
+                                            <path d="M15 0.0625C14.1675 0.538206 0.832471 8.15762 0 8.63332V13.0384C0.519294 12.7626 14.3521 5.41521 14.9992 5.07144L14.9996 5.07162L15 5.07185C19.4406 7.42179 25.4217 10.587 30 13.0098C30 12.5163 30 9.15326 30 8.63332C29.1675 8.15762 15.8325 0.538206 15 0.0625Z" fill="white"/>
+                                            <path d="M19.4338 15.9527C19.4338 15.6441 19.4338 15.3789 19.4338 15.0703C16.7139 15.0703 13.2882 15.0703 10.5662 15.0703V15.9527C10.5662 16.9136 9.78446 17.6953 8.82352 17.6953C8.51493 17.6953 8.24975 17.6953 7.94116 17.6953V20.8903C7.94116 24.1331 9.58763 26.9424 12.0256 28.5967C13.499 29.5964 14.8478 29.8821 15 29.9374C15.1516 29.8824 16.5005 29.5967 17.9743 28.5967C20.3842 26.9615 22.0588 24.1654 22.0588 20.8903C22.0588 19.303 22.0588 18.6234 22.0588 17.6954C21.7502 17.6954 21.485 17.6954 21.1765 17.6954C20.2156 17.6953 19.4338 16.9136 19.4338 15.9527ZM14.0641 25.1196L11.5685 22.624L12.8162 21.3761L14.0641 22.624C15.0149 21.6732 16.1762 20.5118 17.1837 19.5044L18.4315 20.7522C17.9912 21.1925 14.5044 24.6793 14.0641 25.1196Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_14_521">
+                                            <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Claim Consultation</p>
+                                </div>
+                                <p class="mt-2">If you don’t know what to do when a loss occurs. Contact iFile Claims Public Adjusters. We are here to help you. After you contact us, we’ll inspect your home, analyze all the information, estimate the costs and file the claim to your insurance company. </p>
+                                <p class="mt-2"> Do you have a new or an already open claim? Were you underpaid or denied? We can help in all cases. <span class="primary_text">Ask for a free claim consultation</span> now so we can start fighting your fight today.</p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5013 12.1875C22.5013 6.50116 17.8749 1.875 12.1881 1.875C6.50145 1.875 1.875 6.50116 1.875 12.1875C1.875 17.8738 6.50145 22.5 12.1881 22.5C17.8749 22.5 22.5013 17.8738 22.5013 12.1875ZM12.1881 20.625C7.53559 20.625 3.75011 16.8402 3.75011 12.1875C3.75011 7.53479 7.53559 3.75 12.1881 3.75C16.8407 3.75 20.6262 7.53479 20.6262 12.1875C20.6262 16.8402 16.8407 20.625 12.1881 20.625Z" fill="white"/>
+                                <path d="M27.2697 23.1299L24.1018 19.9622C23.8043 19.6648 23.3629 19.6217 23.0092 19.8073L21.5754 18.3735C20.7351 19.6442 19.6453 20.734 18.3745 21.5742L19.8083 23.0079C19.6228 23.3616 19.6659 23.803 19.9633 24.1004L23.1312 27.2681C23.6838 27.8211 24.4185 28.125 25.2005 28.125C25.9819 28.125 26.7166 27.8211 27.2701 27.2681C28.41 26.1264 28.41 24.2698 27.2697 23.1299Z" fill="white"/>
+                                <path d="M12.1873 4.6875C8.04493 4.6875 4.68689 8.04537 4.68689 12.1875C4.68689 16.3296 8.04493 19.6875 12.1873 19.6875C16.3297 19.6875 19.6878 16.3296 19.6878 12.1875C19.6878 8.04537 16.3297 4.6875 12.1873 4.6875ZM13.6697 16.832L12.8008 17.5836C12.625 17.7361 12.4062 17.8125 12.1873 17.8125C11.9685 17.8125 11.7497 17.7361 11.5739 17.5836L10.705 16.8315C8.51768 14.9396 7.49956 12.8682 7.49956 10.3125C7.49956 9.95728 7.70006 9.63272 8.01775 9.47388L11.768 7.59888C12.0317 7.46704 12.343 7.46704 12.6067 7.59888L16.3569 9.47388C16.6746 9.63272 16.8751 9.95728 16.8751 10.3125C16.8751 12.8682 15.857 14.9396 13.6697 16.832Z" fill="white"/>
+                                <path d="M14.4817 9.47366C14.0176 9.24295 13.4549 9.43063 13.2237 9.89298L11.9305 12.4793L10.9751 11.5244C10.6088 11.1582 10.0155 11.1582 9.64929 11.5244C9.28308 11.8907 9.28308 12.4839 9.64929 12.8501L11.5244 14.7251C11.7016 14.9027 11.9406 14.9998 12.1873 14.9998C12.2372 14.9998 12.2876 14.9961 12.3375 14.9879C12.635 14.9394 12.8909 14.7508 13.026 14.4816L14.9011 10.7316C15.1327 10.2683 14.945 9.70529 14.4817 9.47366Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.5013 12.1875C22.5013 6.50116 17.8749 1.875 12.1881 1.875C6.50145 1.875 1.875 6.50116 1.875 12.1875C1.875 17.8738 6.50145 22.5 12.1881 22.5C17.8749 22.5 22.5013 17.8738 22.5013 12.1875ZM12.1881 20.625C7.53559 20.625 3.75011 16.8402 3.75011 12.1875C3.75011 7.53479 7.53559 3.75 12.1881 3.75C16.8407 3.75 20.6262 7.53479 20.6262 12.1875C20.6262 16.8402 16.8407 20.625 12.1881 20.625Z" fill="white"/>
+                                            <path d="M27.2697 23.1299L24.1018 19.9622C23.8043 19.6648 23.3629 19.6217 23.0092 19.8073L21.5754 18.3735C20.7351 19.6442 19.6453 20.734 18.3745 21.5742L19.8083 23.0079C19.6228 23.3616 19.6659 23.803 19.9633 24.1004L23.1312 27.2681C23.6838 27.8211 24.4185 28.125 25.2005 28.125C25.9819 28.125 26.7166 27.8211 27.2701 27.2681C28.41 26.1264 28.41 24.2698 27.2697 23.1299Z" fill="white"/>
+                                            <path d="M12.1873 4.6875C8.04493 4.6875 4.68689 8.04537 4.68689 12.1875C4.68689 16.3296 8.04493 19.6875 12.1873 19.6875C16.3297 19.6875 19.6878 16.3296 19.6878 12.1875C19.6878 8.04537 16.3297 4.6875 12.1873 4.6875ZM13.6697 16.832L12.8008 17.5836C12.625 17.7361 12.4062 17.8125 12.1873 17.8125C11.9685 17.8125 11.7497 17.7361 11.5739 17.5836L10.705 16.8315C8.51768 14.9396 7.49956 12.8682 7.49956 10.3125C7.49956 9.95728 7.70006 9.63272 8.01775 9.47388L11.768 7.59888C12.0317 7.46704 12.343 7.46704 12.6067 7.59888L16.3569 9.47388C16.6746 9.63272 16.8751 9.95728 16.8751 10.3125C16.8751 12.8682 15.857 14.9396 13.6697 16.832Z" fill="white"/>
+                                            <path d="M14.4817 9.47366C14.0176 9.24295 13.4549 9.43063 13.2237 9.89298L11.9305 12.4793L10.9751 11.5244C10.6088 11.1582 10.0155 11.1582 9.64929 11.5244C9.28308 11.8907 9.28308 12.4839 9.64929 12.8501L11.5244 14.7251C11.7016 14.9027 11.9406 14.9998 12.1873 14.9998C12.2372 14.9998 12.2876 14.9961 12.3375 14.9879C12.635 14.9394 12.8909 14.7508 13.026 14.4816L14.9011 10.7316C15.1327 10.2683 14.945 9.70529 14.4817 9.47366Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Loss Inspection</p>
+                                </div>
+                                <p class="mt-2">If you need help identifying a fillable claim, whether its damage to a Roof, Plumbing, HVAC Systems, Water Heaters, Mold Issues, Fire Damage, Drywall Issues, Accidental Water Damage, Commercial Property Damage, Hurricane Damage, or more our Public Adjusters will inspect the loss for free. </p>
+                                <p class="mt-2"> We will also look for other damages, besides the one you requested, which could be also covered by your insurance. We offer Free Loss Inspection which is available upon request. Schedule your Free Loss Inspection Today</p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27 3H25.5V1.5C25.5 0.6 24.9 0 24 0C23.1 0 22.5 0.6 22.5 1.5V3H7.5V1.5C7.5 0.6 6.9 0 6 0C5.1 0 4.5 0.6 4.5 1.5V3H1.5C0.75 3 0 3.6 0 4.5V25.5C0 26.4 0.75 27 1.5 27H10.65C9.6 25.2 9 23.1 9 21C9 14.4 14.4 9 21 9C23.85 9 26.4 10.05 28.5 11.7V4.5C28.5 3.75 27.75 3 27 3Z" fill="white"/>
+                                <path d="M21 12C16.05 12 12 16.05 12 21C12 25.95 16.05 30 21 30C25.95 30 30 25.95 30 21C30 16.05 25.95 12 21 12ZM24 22.5H21C20.1 22.5 19.5 21.9 19.5 21V16.5C19.5 15.6 20.1 15 21 15C21.9 15 22.5 15.6 22.5 16.5V19.5H24C24.9 19.5 25.5 20.1 25.5 21C25.5 21.9 24.9 22.5 24 22.5Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M27 3H25.5V1.5C25.5 0.6 24.9 0 24 0C23.1 0 22.5 0.6 22.5 1.5V3H7.5V1.5C7.5 0.6 6.9 0 6 0C5.1 0 4.5 0.6 4.5 1.5V3H1.5C0.75 3 0 3.6 0 4.5V25.5C0 26.4 0.75 27 1.5 27H10.65C9.6 25.2 9 23.1 9 21C9 14.4 14.4 9 21 9C23.85 9 26.4 10.05 28.5 11.7V4.5C28.5 3.75 27.75 3 27 3Z" fill="white"/>
+                                            <path d="M21 12C16.05 12 12 16.05 12 21C12 25.95 16.05 30 21 30C25.95 30 30 25.95 30 21C30 16.05 25.95 12 21 12ZM24 22.5H21C20.1 22.5 19.5 21.9 19.5 21V16.5C19.5 15.6 20.1 15 21 15C21.9 15 22.5 15.6 22.5 16.5V19.5H24C24.9 19.5 25.5 20.1 25.5 21C25.5 21.9 24.9 22.5 24 22.5Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Schedule Your Free Inspection Now</p>
+                                </div>
+                                <p class="mt-2">Do you have a new or an already open claim? Were you underpaid or denied? Don’t worry, we can help you. In case the loss happened within 5 years, fill out our free inspection form, or send an email, and one of our public adjusters will contact you shortly.</p>
+                                <p class="mt-2">You can also call us if that’s more convenient for you. Our team of experts (public adjusters, attorneys, contractors, mediators, engineers) is waiting for you to contact us. </p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 7.03125C16.9416 7.03125 18.5156 5.45725 18.5156 3.51562C18.5156 1.574 16.9416 0 15 0C13.0584 0 11.4844 1.574 11.4844 3.51562C11.4844 5.45725 13.0584 7.03125 15 7.03125Z" fill="white"/>
+                                <path d="M21.1523 13.2422C21.1523 9.85014 18.3921 7.03125 15 7.03125C11.6079 7.03125 8.84766 9.85014 8.84766 13.2422V15.8789H21.1523V13.2422Z" fill="white"/>
+                                <path d="M26.3456 13.3606C25.8601 20.9612 22.6 22.7296 22.4244 22.8174L21.6227 21.2527C21.6512 21.2371 23.4664 20.1448 24.2773 15.9113C20.1079 16.2588 16.6952 19.5161 16.1947 23.7607C15.9853 25.5434 15.8794 27.3855 15.8794 29.121L15.8789 30H22.9102V29.1211C22.9102 28.2748 23.5385 27.6912 24.7426 26.6483C26.8129 24.8562 30 22.0879 30 15V10.6055C30 10.6055 29.1013 10.6055 29.0915 10.6056C27.6344 10.6154 26.4386 11.9064 26.3456 13.3606Z" fill="white"/>
+                                <path d="M5.25738 26.6483C6.46154 27.6912 7.08984 28.2748 7.08984 29.1211V30H14.1211V29.1211C14.1211 27.3856 14.0147 25.5434 13.8052 23.7608C13.3047 19.5161 9.89209 16.2588 5.72262 15.9113C6.5335 20.1448 8.34873 21.2371 8.37727 21.2528L7.57559 22.8175C7.39998 22.7296 4.13988 20.9612 3.65432 13.3607C3.56139 11.9065 2.36555 10.6155 0.908496 10.6056C0.898652 10.6055 0 10.6055 0 10.6055V15C0 22.0879 3.18715 24.8562 5.25738 26.6483Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 7.03125C16.9416 7.03125 18.5156 5.45725 18.5156 3.51562C18.5156 1.574 16.9416 0 15 0C13.0584 0 11.4844 1.574 11.4844 3.51562C11.4844 5.45725 13.0584 7.03125 15 7.03125Z" fill="white"/>
+                                            <path d="M21.1523 13.2422C21.1523 9.85014 18.3921 7.03125 15 7.03125C11.6079 7.03125 8.84766 9.85014 8.84766 13.2422V15.8789H21.1523V13.2422Z" fill="white"/>
+                                            <path d="M26.3456 13.3606C25.8601 20.9612 22.6 22.7296 22.4244 22.8174L21.6227 21.2527C21.6512 21.2371 23.4664 20.1448 24.2773 15.9113C20.1079 16.2588 16.6952 19.5161 16.1947 23.7607C15.9853 25.5434 15.8794 27.3855 15.8794 29.121L15.8789 30H22.9102V29.1211C22.9102 28.2748 23.5385 27.6912 24.7426 26.6483C26.8129 24.8562 30 22.0879 30 15V10.6055C30 10.6055 29.1013 10.6055 29.0915 10.6056C27.6344 10.6154 26.4386 11.9064 26.3456 13.3606Z" fill="white"/>
+                                            <path d="M5.25738 26.6483C6.46154 27.6912 7.08984 28.2748 7.08984 29.1211V30H14.1211V29.1211C14.1211 27.3856 14.0147 25.5434 13.8052 23.7608C13.3047 19.5161 9.89209 16.2588 5.72262 15.9113C6.5335 20.1448 8.34873 21.2371 8.37727 21.2528L7.57559 22.8175C7.39998 22.7296 4.13988 20.9612 3.65432 13.3607C3.56139 11.9065 2.36555 10.6155 0.908496 10.6056C0.898652 10.6055 0 10.6055 0 10.6055V15C0 22.0879 3.18715 24.8562 5.25738 26.6483Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Claim Denial Assistance</p>
+                                </div>
+                                <p class="mt-2">Are you unhappy with an underpaid claim? Did your insurance company deny your claim? It’s never too late within the 2 - 3 years period you are eligible to have your claim or claims reopened. </p>
+                                <p class="mt-2">Fighting for a proper settlement is more than frustrating when it’s about repairing your home. Leave the fight to iFile Claims, and relax during the process. You can’t lose anything so why not reopening together today?</p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.823 5.12238C22.823 4.41855 22.5483 3.75598 22.0505 3.25816L19.5649 0.7725C19.074 0.281543 18.3771 0 17.6836 0H17.5325V5.27344H22.8231L22.823 5.12238Z" fill="white"/>
+                                <path d="M16.051 18.1369C16.2192 17.6262 16.5128 17.1507 16.8956 16.7654L22.8465 10.8384V7.03125H16.6707C16.1849 7.03125 15.8203 6.63814 15.8203 6.15234V0H2.63672C1.18277 0 0 1.18277 0 2.63672V27.3633C0 28.8172 1.18277 30 2.63672 30H20.1863C21.6403 30 22.8465 28.8172 22.8465 27.3633V20.8037L21.8806 21.7461C21.4893 22.134 21.0309 22.4164 20.5142 22.5889L17.7196 23.5219L17.2938 23.5451C16.59 23.5451 15.924 23.2027 15.5103 22.6293C15.1 22.0586 14.9885 21.3187 15.2116 20.6501L16.051 18.1369ZM4.39453 15.8203H13.1551C13.6409 15.8203 14.034 16.2134 14.034 16.6992C14.034 17.185 13.6409 17.5781 13.1551 17.5781H4.39453C3.90873 17.5781 3.51562 17.185 3.51562 16.6992C3.51562 16.2134 3.90873 15.8203 4.39453 15.8203ZM3.51562 13.1836C3.51562 12.6978 3.90873 12.3047 4.39453 12.3047H13.1551C13.6409 12.3047 14.034 12.6978 14.034 13.1836C14.034 13.6694 13.6409 14.0625 13.1551 14.0625H4.39453C3.90873 14.0625 3.51562 13.6694 3.51562 13.1836ZM3.51562 20.2148C3.51562 19.729 3.90873 19.3359 4.39453 19.3359H13.1551C13.6409 19.3359 14.034 19.729 14.034 20.2148C14.034 20.7006 13.6409 21.0938 13.1551 21.0938H4.39453C3.90873 21.0938 3.51562 20.7006 3.51562 20.2148ZM16.6707 24.6094C17.1565 24.6094 17.5496 25.0025 17.5496 25.4883C17.5496 25.9741 17.1565 26.3672 16.6707 26.3672H11.3972C10.9114 26.3672 10.5183 25.9741 10.5183 25.4883C10.5183 25.0025 10.9114 24.6094 11.3972 24.6094H16.6707ZM4.39453 10.5469C3.90873 10.5469 3.51562 10.1538 3.51562 9.66797C3.51562 9.18217 3.90873 8.78906 4.39453 8.78906H16.6707C17.1565 8.78906 17.5496 9.18217 17.5496 9.66797C17.5496 10.1538 17.1565 10.5469 16.6707 10.5469H4.39453Z" fill="white"/>
+                                <path d="M17.6432 18.9146L16.8786 21.2086C16.764 21.5522 17.091 21.8791 17.4346 21.7643L19.7273 20.9986L17.6432 18.9146Z" fill="white"/>
+                                <path d="M24.4693 11.6782L18.6808 17.4666L21.1772 19.963C22.4855 18.6545 25.0311 16.1086 26.9654 14.1743L24.4693 11.6782Z" fill="white"/>
+                                <path d="M29.4835 9.15732C29.1745 8.8466 28.7196 8.66895 28.2372 8.66895C27.7548 8.66895 27.2999 8.8466 26.9892 9.1582L25.712 10.4354L28.208 12.9313C28.9072 12.2321 29.3905 11.7488 29.4853 11.6541C30.1718 10.9665 30.1718 9.8465 29.4835 9.15732Z" fill="white"/>
+                                <path d="M29.4852 11.6541C29.4853 11.6541 29.4853 11.654 29.4853 11.654C29.4876 11.6517 29.4886 11.6507 29.4904 11.6489C29.4886 11.6508 29.4876 11.6518 29.4852 11.6541Z" fill="white"/>
+                                <path d="M29.4904 11.6489C29.4932 11.6461 29.4964 11.6428 29.4981 11.6411C29.4964 11.6429 29.4932 11.6461 29.4904 11.6489Z" fill="white"/>
+                                <path d="M29.4982 11.641C29.5039 11.6353 29.504 11.6352 29.4982 11.641V11.641Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.823 5.12238C22.823 4.41855 22.5483 3.75598 22.0505 3.25816L19.5649 0.7725C19.074 0.281543 18.3771 0 17.6836 0H17.5325V5.27344H22.8231L22.823 5.12238Z" fill="white"/>
+                                            <path d="M16.051 18.1369C16.2192 17.6262 16.5128 17.1507 16.8956 16.7654L22.8465 10.8384V7.03125H16.6707C16.1849 7.03125 15.8203 6.63814 15.8203 6.15234V0H2.63672C1.18277 0 0 1.18277 0 2.63672V27.3633C0 28.8172 1.18277 30 2.63672 30H20.1863C21.6403 30 22.8465 28.8172 22.8465 27.3633V20.8037L21.8806 21.7461C21.4893 22.134 21.0309 22.4164 20.5142 22.5889L17.7196 23.5219L17.2938 23.5451C16.59 23.5451 15.924 23.2027 15.5103 22.6293C15.1 22.0586 14.9885 21.3187 15.2116 20.6501L16.051 18.1369ZM4.39453 15.8203H13.1551C13.6409 15.8203 14.034 16.2134 14.034 16.6992C14.034 17.185 13.6409 17.5781 13.1551 17.5781H4.39453C3.90873 17.5781 3.51562 17.185 3.51562 16.6992C3.51562 16.2134 3.90873 15.8203 4.39453 15.8203ZM3.51562 13.1836C3.51562 12.6978 3.90873 12.3047 4.39453 12.3047H13.1551C13.6409 12.3047 14.034 12.6978 14.034 13.1836C14.034 13.6694 13.6409 14.0625 13.1551 14.0625H4.39453C3.90873 14.0625 3.51562 13.6694 3.51562 13.1836ZM3.51562 20.2148C3.51562 19.729 3.90873 19.3359 4.39453 19.3359H13.1551C13.6409 19.3359 14.034 19.729 14.034 20.2148C14.034 20.7006 13.6409 21.0938 13.1551 21.0938H4.39453C3.90873 21.0938 3.51562 20.7006 3.51562 20.2148ZM16.6707 24.6094C17.1565 24.6094 17.5496 25.0025 17.5496 25.4883C17.5496 25.9741 17.1565 26.3672 16.6707 26.3672H11.3972C10.9114 26.3672 10.5183 25.9741 10.5183 25.4883C10.5183 25.0025 10.9114 24.6094 11.3972 24.6094H16.6707ZM4.39453 10.5469C3.90873 10.5469 3.51562 10.1538 3.51562 9.66797C3.51562 9.18217 3.90873 8.78906 4.39453 8.78906H16.6707C17.1565 8.78906 17.5496 9.18217 17.5496 9.66797C17.5496 10.1538 17.1565 10.5469 16.6707 10.5469H4.39453Z" fill="white"/>
+                                            <path d="M17.6432 18.9146L16.8786 21.2086C16.764 21.5522 17.091 21.8791 17.4346 21.7643L19.7273 20.9986L17.6432 18.9146Z" fill="white"/>
+                                            <path d="M24.4693 11.6782L18.6808 17.4666L21.1772 19.963C22.4855 18.6545 25.0311 16.1086 26.9654 14.1743L24.4693 11.6782Z" fill="white"/>
+                                            <path d="M29.4835 9.15732C29.1745 8.8466 28.7196 8.66895 28.2372 8.66895C27.7548 8.66895 27.2999 8.8466 26.9892 9.1582L25.712 10.4354L28.208 12.9313C28.9072 12.2321 29.3905 11.7488 29.4853 11.6541C30.1718 10.9665 30.1718 9.8465 29.4835 9.15732Z" fill="white"/>
+                                            <path d="M29.4852 11.6541C29.4853 11.6541 29.4853 11.654 29.4853 11.654C29.4876 11.6517 29.4886 11.6507 29.4904 11.6489C29.4886 11.6508 29.4876 11.6518 29.4852 11.6541Z" fill="white"/>
+                                            <path d="M29.4904 11.6489C29.4932 11.6461 29.4964 11.6428 29.4981 11.6411C29.4964 11.6429 29.4932 11.6461 29.4904 11.6489Z" fill="white"/>
+                                            <path d="M29.4982 11.641C29.5039 11.6353 29.504 11.6352 29.4982 11.641V11.641Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Claim Estimate</p>
+                                </div>
+                                <p class="mt-2">After hiring iFile Claims you will no longer have to worry about the cost of an Estimate. We provide Free complimentary professional estimates to clients in order to assist with their claim loss. </p>
+                                <p class="mt-2">The cost of a Detailed Professional Estimate could range anywhere from $750.00 to $3,000.00, and an additional professional (Engineer, Contractor, & Architect) report may be required. </p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5625 12.1875C21.5625 11.8323 21.362 11.5082 21.0443 11.3489L15.4193 8.53638C15.1556 8.40454 14.8444 8.40454 14.5807 8.53638L8.95569 11.3489C8.638 11.5082 8.4375 11.8323 8.4375 12.1875C8.4375 16.0419 10.1358 19.6664 13.0957 22.1338L14.3994 23.2205C14.5734 23.3652 14.7867 23.4375 15 23.4375C15.2133 23.4375 15.4266 23.3652 15.6006 23.2205L16.9034 22.1338C19.8642 19.6664 21.5625 16.0419 21.5625 12.1875ZM15.7496 17.4371C15.5866 17.655 15.3376 17.7905 15.0666 17.8098C15.0437 17.8116 15.0217 17.8125 14.9998 17.8125C14.7517 17.8125 14.5136 17.7145 14.3369 17.5378L12.4619 15.6628C12.0957 15.2966 12.0957 14.7034 12.4619 14.3372C12.8281 13.9709 13.4214 13.9709 13.7876 14.3372L14.8981 15.4477L17.0625 12.5629C17.3737 12.1481 17.9606 12.0657 18.3744 12.3752C18.7891 12.6855 18.8734 13.2733 18.5621 13.6871L15.7496 17.4371Z" fill="white"/>
+                                <path d="M8.27791 16.7659C7.771 15.3123 7.5 13.7687 7.5 12.1875C7.5 11.4734 7.89642 10.8307 8.53546 10.5112L14.1614 7.69775C14.4205 7.56866 14.7107 7.5 15 7.5C15.2893 7.5 15.5795 7.56866 15.8386 7.69775L21.4636 10.5103C22.1036 10.8307 22.5 11.4734 22.5 12.1875C22.5 13.7687 22.2291 15.3123 21.7221 16.7659C24.3002 16.254 26.25 13.9763 26.25 11.25C26.25 8.14819 23.7268 5.625 20.625 5.625C20.5166 5.625 20.4163 5.65281 20.3194 5.68657C19.5626 3.47311 17.4667 1.875 15 1.875C12.5333 1.875 10.4374 3.47311 9.68056 5.68657C9.58374 5.65281 9.48343 5.625 9.375 5.625C6.27319 5.625 3.75 8.14819 3.75 11.25C3.75 13.9763 5.69979 16.254 8.27791 16.7659Z" fill="white"/>
+                                <path d="M10.3125 20.5605V24.3752H7.32725C6.93901 23.2863 5.90807 22.5002 4.6875 22.5002C3.1366 22.5002 1.875 23.7618 1.875 25.3127C1.875 26.8636 3.1366 28.1252 4.6875 28.1252C5.90807 28.1252 6.93901 27.3391 7.32725 26.2502H11.25C11.7682 26.2502 12.1875 25.8309 12.1875 25.3127V22.568C11.494 21.9535 10.8619 21.2859 10.3125 20.5605Z" fill="white"/>
+                                <path d="M25.3125 22.5002C24.0919 22.5002 23.061 23.2863 22.6727 24.3752H19.6875V20.5601C19.1381 21.2853 18.506 21.9527 17.8125 22.5672V25.3127C17.8125 25.8309 18.2318 26.2502 18.75 26.2502H22.6728C23.061 27.3391 24.0919 28.1252 25.3125 28.1252C26.8634 28.1252 28.125 26.8636 28.125 25.3127C28.125 23.7618 26.8634 22.5002 25.3125 22.5002Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.5625 12.1875C21.5625 11.8323 21.362 11.5082 21.0443 11.3489L15.4193 8.53638C15.1556 8.40454 14.8444 8.40454 14.5807 8.53638L8.95569 11.3489C8.638 11.5082 8.4375 11.8323 8.4375 12.1875C8.4375 16.0419 10.1358 19.6664 13.0957 22.1338L14.3994 23.2205C14.5734 23.3652 14.7867 23.4375 15 23.4375C15.2133 23.4375 15.4266 23.3652 15.6006 23.2205L16.9034 22.1338C19.8642 19.6664 21.5625 16.0419 21.5625 12.1875ZM15.7496 17.4371C15.5866 17.655 15.3376 17.7905 15.0666 17.8098C15.0437 17.8116 15.0217 17.8125 14.9998 17.8125C14.7517 17.8125 14.5136 17.7145 14.3369 17.5378L12.4619 15.6628C12.0957 15.2966 12.0957 14.7034 12.4619 14.3372C12.8281 13.9709 13.4214 13.9709 13.7876 14.3372L14.8981 15.4477L17.0625 12.5629C17.3737 12.1481 17.9606 12.0657 18.3744 12.3752C18.7891 12.6855 18.8734 13.2733 18.5621 13.6871L15.7496 17.4371Z" fill="white"/>
+                                            <path d="M8.27791 16.7659C7.771 15.3123 7.5 13.7687 7.5 12.1875C7.5 11.4734 7.89642 10.8307 8.53546 10.5112L14.1614 7.69775C14.4205 7.56866 14.7107 7.5 15 7.5C15.2893 7.5 15.5795 7.56866 15.8386 7.69775L21.4636 10.5103C22.1036 10.8307 22.5 11.4734 22.5 12.1875C22.5 13.7687 22.2291 15.3123 21.7221 16.7659C24.3002 16.254 26.25 13.9763 26.25 11.25C26.25 8.14819 23.7268 5.625 20.625 5.625C20.5166 5.625 20.4163 5.65281 20.3194 5.68657C19.5626 3.47311 17.4667 1.875 15 1.875C12.5333 1.875 10.4374 3.47311 9.68056 5.68657C9.58374 5.65281 9.48343 5.625 9.375 5.625C6.27319 5.625 3.75 8.14819 3.75 11.25C3.75 13.9763 5.69979 16.254 8.27791 16.7659Z" fill="white"/>
+                                            <path d="M10.3125 20.5605V24.3752H7.32725C6.93901 23.2863 5.90807 22.5002 4.6875 22.5002C3.1366 22.5002 1.875 23.7618 1.875 25.3127C1.875 26.8636 3.1366 28.1252 4.6875 28.1252C5.90807 28.1252 6.93901 27.3391 7.32725 26.2502H11.25C11.7682 26.2502 12.1875 25.8309 12.1875 25.3127V22.568C11.494 21.9535 10.8619 21.2859 10.3125 20.5605Z" fill="white"/>
+                                            <path d="M25.3125 22.5002C24.0919 22.5002 23.061 23.2863 22.6727 24.3752H19.6875V20.5601C19.1381 21.2853 18.506 21.9527 17.8125 22.5672V25.3127C17.8125 25.8309 18.2318 26.2502 18.75 26.2502H22.6728C23.061 27.3391 24.0919 28.1252 25.3125 28.1252C26.8634 28.1252 28.125 26.8636 28.125 25.3127C28.125 23.7618 26.8634 22.5002 25.3125 22.5002Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Virtual Inspection</p>
+                                </div>
+                                <p class="mt-2">Are you afraid in this insecure COVID period but still need our help? Don’t worry, we can inspect your home remotely. Contact our staff and sign up for our free virtual inspection.</p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+                <div class="choose-card flex flex-col justify-between  h-full">
+                    <div class="flex items-start justify-between">
+                        <div class="choose-card-icon sm:hidden flex">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.98365 1.08178L3.6847 4.37961C3.47335 4.5909 3.623 4.9523 3.92183 4.9523H7.22078C7.40605 4.95224 7.55622 4.80207 7.55622 4.6168V1.31902C7.55622 1.02019 7.19494 0.870546 6.98365 1.08178Z" fill="white"/>
+                                <path d="M21.681 18.5664C18.5288 18.5664 15.9644 21.1309 15.9644 24.283C15.9644 27.4352 18.5288 29.9997 21.681 29.9997C24.8332 29.9997 27.3977 27.4353 27.3977 24.283C27.3978 21.1309 24.8332 18.5664 21.681 18.5664ZM20.8002 22.0523C20.8002 21.5658 21.1946 21.1714 21.6811 21.1714C22.1676 21.1714 22.562 21.5658 22.562 22.0523V24.2831C22.562 24.7696 22.1676 25.164 21.6811 25.164C21.1946 25.164 20.8002 24.7696 20.8002 24.2831V22.0523ZM22.5574 26.701C22.5545 26.7297 22.5504 26.7585 22.5445 26.7867C22.5392 26.8149 22.5315 26.8431 22.5233 26.8701C22.5151 26.8977 22.5051 26.9247 22.4946 26.9511C22.4835 26.9775 22.4711 27.004 22.4577 27.0292C22.4442 27.0545 22.4295 27.0797 22.4136 27.1032C22.3977 27.1273 22.3801 27.1508 22.3619 27.1731C22.3436 27.1954 22.3243 27.2172 22.3038 27.2371C22.2838 27.2577 22.2621 27.2771 22.2398 27.2958C22.2174 27.3135 22.194 27.331 22.1699 27.3469C22.1464 27.3628 22.1212 27.3774 22.0959 27.391C22.0706 27.4045 22.0442 27.4168 22.0178 27.4279C21.9914 27.4391 21.9644 27.4485 21.9368 27.4567C21.9091 27.4655 21.8816 27.4726 21.8534 27.4779C21.8252 27.4837 21.7964 27.4884 21.7677 27.4908C21.7389 27.4937 21.7101 27.4955 21.6813 27.4955C21.6526 27.4955 21.6232 27.4937 21.5945 27.4908C21.5663 27.4885 21.5375 27.4838 21.5093 27.4779C21.4811 27.4726 21.4529 27.4656 21.4254 27.4567C21.3977 27.4485 21.3707 27.4391 21.3443 27.4279C21.3179 27.4168 21.2915 27.4045 21.2662 27.391C21.2409 27.3774 21.2162 27.3628 21.1921 27.3469C21.1681 27.331 21.1446 27.3135 21.1228 27.2958C21.0999 27.277 21.0788 27.2577 21.0583 27.2371C21.0376 27.2171 21.0182 27.1954 21.0001 27.1731C20.9819 27.1508 20.9649 27.1273 20.949 27.1032C20.9326 27.0797 20.9179 27.0545 20.9044 27.0292C20.8909 27.004 20.8786 26.9775 20.868 26.9511C20.8569 26.9247 20.8469 26.8977 20.8387 26.8701C20.8304 26.8431 20.8234 26.8149 20.8175 26.7867C20.8116 26.7585 20.8075 26.7297 20.8046 26.701C20.8016 26.6722 20.8004 26.6434 20.8004 26.6147C20.8004 26.5859 20.8017 26.5565 20.8046 26.5278C20.8075 26.4996 20.8116 26.4708 20.8175 26.4426C20.8234 26.4145 20.8304 26.3863 20.8387 26.3587C20.8469 26.3317 20.8569 26.3041 20.868 26.2776C20.8786 26.2512 20.8909 26.2248 20.9044 26.1995C20.9178 26.1743 20.9325 26.1496 20.949 26.1255C20.965 26.1014 20.9819 26.078 21.0001 26.0562C21.0184 26.0339 21.0377 26.0121 21.0583 25.9916C21.0788 25.9717 21.1 25.9517 21.1228 25.9335C21.1446 25.9153 21.1681 25.8983 21.1921 25.8824C21.2162 25.8665 21.2409 25.8513 21.2662 25.8378C21.2915 25.8242 21.3179 25.8119 21.3443 25.8014C21.3707 25.7903 21.3977 25.7802 21.4254 25.772C21.4529 25.7638 21.4811 25.7567 21.5093 25.7509C21.5376 25.745 21.5663 25.7409 21.5945 25.7379C21.6519 25.7321 21.7101 25.7321 21.7677 25.7379C21.7964 25.7409 21.8252 25.745 21.8534 25.7509C21.8816 25.7567 21.9092 25.7638 21.9368 25.772C21.9644 25.7802 21.9914 25.7903 22.0179 25.8014C22.0443 25.8119 22.0706 25.8243 22.096 25.8378C22.1212 25.8513 22.1464 25.8665 22.17 25.8824C22.194 25.8983 22.2175 25.9153 22.2399 25.9335C22.2622 25.9517 22.2839 25.9717 22.3038 25.9916C22.3244 26.0122 22.3438 26.0339 22.3619 26.0562C22.3802 26.078 22.3977 26.1014 22.4137 26.1255C22.4295 26.1496 22.4442 26.1743 22.4577 26.1995C22.4711 26.2248 22.4835 26.2512 22.4947 26.2776C22.5052 26.3041 22.5153 26.3317 22.5234 26.3587C22.5317 26.3863 22.5393 26.4145 22.5446 26.4426C22.5505 26.4708 22.5545 26.4996 22.5574 26.5278C22.5604 26.5565 22.5621 26.5859 22.5621 26.6147C22.5621 26.6434 22.5604 26.6722 22.5574 26.701Z" fill="white"/>
+                                <path d="M20.0785 0H9.65347C9.46819 0 9.31802 0.150176 9.31802 0.335449V5.79205C9.31802 5.79896 9.31714 5.8057 9.31696 5.81256C9.31714 5.81941 9.31802 5.82615 9.31802 5.83307C9.31802 6.31957 8.92362 6.71396 8.43712 6.71396H2.93774C2.75247 6.71396 2.60229 6.86414 2.60229 7.04941V23.4794C2.60229 24.851 3.71417 25.9628 5.08573 25.9628H14.3424C14.7268 25.9628 15.0164 25.6128 14.9432 25.2354C14.8606 24.8099 14.8174 24.3704 14.8174 23.9207C14.8174 20.13 17.8903 17.3507 21.6811 17.3507C21.7644 17.3507 21.8475 17.3521 21.9301 17.3551C22.2757 17.3675 22.5619 17.0893 22.5619 16.7435V2.48344C22.5619 1.11187 21.4501 0 20.0785 0ZM11.4908 20.9027H7.00901C6.52251 20.9027 6.12812 20.5083 6.12812 20.0218C6.12812 19.5353 6.52251 19.1409 7.00901 19.1409H11.4908C11.9774 19.1409 12.3717 19.5353 12.3717 20.0218C12.3717 20.5083 11.9774 20.9027 11.4908 20.9027ZM18.1553 17.396H7.00896C6.52245 17.396 6.12806 17.0016 6.12806 16.5151C6.12806 16.0286 6.52245 15.6342 7.00896 15.6342H18.1553C18.6418 15.6342 19.0362 16.0286 19.0362 16.5151C19.0362 17.0016 18.6417 17.396 18.1553 17.396ZM18.1553 13.8623H7.00896C6.52245 13.8623 6.12806 13.4679 6.12806 12.9814C6.12806 12.4949 6.52245 12.1005 7.00896 12.1005H18.1553C18.6418 12.1005 19.0362 12.4949 19.0362 12.9814C19.0362 13.4679 18.6417 13.8623 18.1553 13.8623ZM18.1553 10.4643H7.00896C6.52245 10.4643 6.12806 10.0699 6.12806 9.58336C6.12806 9.09686 6.52245 8.70246 7.00896 8.70246H18.1553C18.6418 8.70246 19.0362 9.09686 19.0362 9.58336C19.0362 10.0699 18.6417 10.4643 18.1553 10.4643Z" fill="white"/>
+                            </svg>
+                        </div>
+                            <div class="choose-card-text">
+                                <div class="flex items-center">
+                                    <div class="choose-card-icon sm:flex hidden mr-4">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.98365 1.08178L3.6847 4.37961C3.47335 4.5909 3.623 4.9523 3.92183 4.9523H7.22078C7.40605 4.95224 7.55622 4.80207 7.55622 4.6168V1.31902C7.55622 1.02019 7.19494 0.870546 6.98365 1.08178Z" fill="white"/>
+                                            <path d="M21.681 18.5664C18.5288 18.5664 15.9644 21.1309 15.9644 24.283C15.9644 27.4352 18.5288 29.9997 21.681 29.9997C24.8332 29.9997 27.3977 27.4353 27.3977 24.283C27.3978 21.1309 24.8332 18.5664 21.681 18.5664ZM20.8002 22.0523C20.8002 21.5658 21.1946 21.1714 21.6811 21.1714C22.1676 21.1714 22.562 21.5658 22.562 22.0523V24.2831C22.562 24.7696 22.1676 25.164 21.6811 25.164C21.1946 25.164 20.8002 24.7696 20.8002 24.2831V22.0523ZM22.5574 26.701C22.5545 26.7297 22.5504 26.7585 22.5445 26.7867C22.5392 26.8149 22.5315 26.8431 22.5233 26.8701C22.5151 26.8977 22.5051 26.9247 22.4946 26.9511C22.4835 26.9775 22.4711 27.004 22.4577 27.0292C22.4442 27.0545 22.4295 27.0797 22.4136 27.1032C22.3977 27.1273 22.3801 27.1508 22.3619 27.1731C22.3436 27.1954 22.3243 27.2172 22.3038 27.2371C22.2838 27.2577 22.2621 27.2771 22.2398 27.2958C22.2174 27.3135 22.194 27.331 22.1699 27.3469C22.1464 27.3628 22.1212 27.3774 22.0959 27.391C22.0706 27.4045 22.0442 27.4168 22.0178 27.4279C21.9914 27.4391 21.9644 27.4485 21.9368 27.4567C21.9091 27.4655 21.8816 27.4726 21.8534 27.4779C21.8252 27.4837 21.7964 27.4884 21.7677 27.4908C21.7389 27.4937 21.7101 27.4955 21.6813 27.4955C21.6526 27.4955 21.6232 27.4937 21.5945 27.4908C21.5663 27.4885 21.5375 27.4838 21.5093 27.4779C21.4811 27.4726 21.4529 27.4656 21.4254 27.4567C21.3977 27.4485 21.3707 27.4391 21.3443 27.4279C21.3179 27.4168 21.2915 27.4045 21.2662 27.391C21.2409 27.3774 21.2162 27.3628 21.1921 27.3469C21.1681 27.331 21.1446 27.3135 21.1228 27.2958C21.0999 27.277 21.0788 27.2577 21.0583 27.2371C21.0376 27.2171 21.0182 27.1954 21.0001 27.1731C20.9819 27.1508 20.9649 27.1273 20.949 27.1032C20.9326 27.0797 20.9179 27.0545 20.9044 27.0292C20.8909 27.004 20.8786 26.9775 20.868 26.9511C20.8569 26.9247 20.8469 26.8977 20.8387 26.8701C20.8304 26.8431 20.8234 26.8149 20.8175 26.7867C20.8116 26.7585 20.8075 26.7297 20.8046 26.701C20.8016 26.6722 20.8004 26.6434 20.8004 26.6147C20.8004 26.5859 20.8017 26.5565 20.8046 26.5278C20.8075 26.4996 20.8116 26.4708 20.8175 26.4426C20.8234 26.4145 20.8304 26.3863 20.8387 26.3587C20.8469 26.3317 20.8569 26.3041 20.868 26.2776C20.8786 26.2512 20.8909 26.2248 20.9044 26.1995C20.9178 26.1743 20.9325 26.1496 20.949 26.1255C20.965 26.1014 20.9819 26.078 21.0001 26.0562C21.0184 26.0339 21.0377 26.0121 21.0583 25.9916C21.0788 25.9717 21.1 25.9517 21.1228 25.9335C21.1446 25.9153 21.1681 25.8983 21.1921 25.8824C21.2162 25.8665 21.2409 25.8513 21.2662 25.8378C21.2915 25.8242 21.3179 25.8119 21.3443 25.8014C21.3707 25.7903 21.3977 25.7802 21.4254 25.772C21.4529 25.7638 21.4811 25.7567 21.5093 25.7509C21.5376 25.745 21.5663 25.7409 21.5945 25.7379C21.6519 25.7321 21.7101 25.7321 21.7677 25.7379C21.7964 25.7409 21.8252 25.745 21.8534 25.7509C21.8816 25.7567 21.9092 25.7638 21.9368 25.772C21.9644 25.7802 21.9914 25.7903 22.0179 25.8014C22.0443 25.8119 22.0706 25.8243 22.096 25.8378C22.1212 25.8513 22.1464 25.8665 22.17 25.8824C22.194 25.8983 22.2175 25.9153 22.2399 25.9335C22.2622 25.9517 22.2839 25.9717 22.3038 25.9916C22.3244 26.0122 22.3438 26.0339 22.3619 26.0562C22.3802 26.078 22.3977 26.1014 22.4137 26.1255C22.4295 26.1496 22.4442 26.1743 22.4577 26.1995C22.4711 26.2248 22.4835 26.2512 22.4947 26.2776C22.5052 26.3041 22.5153 26.3317 22.5234 26.3587C22.5317 26.3863 22.5393 26.4145 22.5446 26.4426C22.5505 26.4708 22.5545 26.4996 22.5574 26.5278C22.5604 26.5565 22.5621 26.5859 22.5621 26.6147C22.5621 26.6434 22.5604 26.6722 22.5574 26.701Z" fill="white"/>
+                                            <path d="M20.0785 0H9.65347C9.46819 0 9.31802 0.150176 9.31802 0.335449V5.79205C9.31802 5.79896 9.31714 5.8057 9.31696 5.81256C9.31714 5.81941 9.31802 5.82615 9.31802 5.83307C9.31802 6.31957 8.92362 6.71396 8.43712 6.71396H2.93774C2.75247 6.71396 2.60229 6.86414 2.60229 7.04941V23.4794C2.60229 24.851 3.71417 25.9628 5.08573 25.9628H14.3424C14.7268 25.9628 15.0164 25.6128 14.9432 25.2354C14.8606 24.8099 14.8174 24.3704 14.8174 23.9207C14.8174 20.13 17.8903 17.3507 21.6811 17.3507C21.7644 17.3507 21.8475 17.3521 21.9301 17.3551C22.2757 17.3675 22.5619 17.0893 22.5619 16.7435V2.48344C22.5619 1.11187 21.4501 0 20.0785 0ZM11.4908 20.9027H7.00901C6.52251 20.9027 6.12812 20.5083 6.12812 20.0218C6.12812 19.5353 6.52251 19.1409 7.00901 19.1409H11.4908C11.9774 19.1409 12.3717 19.5353 12.3717 20.0218C12.3717 20.5083 11.9774 20.9027 11.4908 20.9027ZM18.1553 17.396H7.00896C6.52245 17.396 6.12806 17.0016 6.12806 16.5151C6.12806 16.0286 6.52245 15.6342 7.00896 15.6342H18.1553C18.6418 15.6342 19.0362 16.0286 19.0362 16.5151C19.0362 17.0016 18.6417 17.396 18.1553 17.396ZM18.1553 13.8623H7.00896C6.52245 13.8623 6.12806 13.4679 6.12806 12.9814C6.12806 12.4949 6.52245 12.1005 7.00896 12.1005H18.1553C18.6418 12.1005 19.0362 12.4949 19.0362 12.9814C19.0362 13.4679 18.6417 13.8623 18.1553 13.8623ZM18.1553 10.4643H7.00896C6.52245 10.4643 6.12806 10.0699 6.12806 9.58336C6.12806 9.09686 6.52245 8.70246 7.00896 8.70246H18.1553C18.6418 8.70246 19.0362 9.09686 19.0362 9.58336C19.0362 10.0699 18.6417 10.4643 18.1553 10.4643Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-semibold text-2xl sm:w-2/3 sm:text-lg">Free Claim Evaluation</p>
+                                </div>
+                                <p class="mt-2">If you have a claim that has been filed and need help or don’t know what the next step is we can provide you with Free Claim Evaluation and let you know what to look out for or if we believe an expert is needed. </p>
+                            </div>
+                    </div>
+                    <div class="text-center lg:mt-3">
+                        <p class="font-medium">Contact us today</p>
+                        <a href="tel:1 877 274 3453" class="choose-card__contact flex items-center text-lg justify-center font-bold">
+                            <svg class="mr-1" width="15" height="15" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End choose -->
+
+    <div class="get-started relative">
+        <img loading="lazy" src="assets/img/png/get started.png" alt="" class="get-started-bg absolute lg:hidden">
+        <div class="container relative z-50 flex items-center lg:flex-col">
+            <div class="w-1/2 pr-4 lg:w-full lg:mb-6 lg:pr-0">
+                <p class="text-xl font-normal text-primary uppercase sm:text-sm">To Get Started</p>
+                <p class="get-started__title font-bold text-dark poppins">To Get Started On The iFile Claims Process, Be Prepared To Provide The Following:</p>
+                <img loading="lazy" src="assets/img/png/zoom.png" alt="" class="w-full mt-3 lg:hidden">
+            </div>
+            <div class="w-1/2 pl-4 lg:pl-0 lg:w-3/4 sm:w-full">
+                <div class="get-started-item flex justify-center items-center sm:flex-col sm:items-start">
+                    <span class="get-started-item__num mr-10 font-black">01</span>
+                    <div class="w-2/3 sm:w-full">
+                        <p class="get-started-item__title font-bold uppercase mb-3">Policy Information</p>
+                        <p class="get-started-item__text">Name of insured, address, phone <br> number, e-mail, and policy number</p>
+                    </div>
+                </div>
+                <div class="get-started-item flex justify-center items-center sm:flex-col sm:items-start">
+                    <span class="get-started-item__num mr-10 font-black">02</span>
+                    <div class="w-2/3 sm:w-full">
+                        <p class="get-started-item__title font-bold uppercase mb-3">Description of Loss</p>
+                        <p class="get-started-item__text">Everything you can recall can help us: time and date of the loss, location of the incident, a detailed description of damages (the more detailed, the better it is).</p>
+                    </div>
+                </div>
+                <div class="get-started-item flex justify-center items-center sm:flex-col sm:items-start">
+                    <span class="get-started-item__num mr-10 font-black">03</span>
+                    <div class="w-2/3 sm:w-full">
+                        <p class="get-started-item__title font-bold uppercase mb-3">Emergency Service Companies & Damage Mitigation</p>
+                        <p class="get-started-item__text">In case you already contacted any emergency service companies or performed any sort of damage mitigation, please let us know.</p>
+                    </div>
+                </div>
+                <div class="get-started-item flex justify-center items-center sm:flex-col sm:items-start">
+                    <span class="get-started-item__num mr-10 font-black">04</span>
+                    <div class="w-2/3 sm:w-full">
+                        <p class="get-started-item__title font-bold uppercase mb-3">Authority Notification</p>
+                        <p class="get-started-item__text">Note all authorities notified (e.g. fire department, police, etc.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End get-started -->
+
+    <div class="steps">
+        <div class="container">
+            <p class="text-xl font-normal text-primary uppercase sm:text-sm text-center">steps of our work</p>
+            <p class="steps__title font-bold text-dark poppins text-center">The iFile Claim’s Claims Process</p>
+            <div class="lg:flex h-full">
+                <div class="flex items-center justify-between w-4/5 lg:w-1/5 m-auto lg:m-0 mt-10 sm:mt-4 pl-5 pr-12 lg:flex-col md:pl-0 md:pr-0 lg:justify-start lg:items-center">
+                    <div class="relative block">
+                        <div class="steps-item">1</div>
+                        <span class="steps__text absolute poppins text-gray__dark font-normal whitespace-nowrap">You Contact Us</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="relative block">
+                        <div class="steps-item">2</div>
+                        <span class="steps__text absolute poppins text-gray__dark font-normal whitespace-nowrap">We Review your Policy</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="relative block">
+                        <div class="steps-item">3</div>
+                        <span class="steps__text absolute poppins text-gray__dark font-normal whitespace-nowrap">We Inspect the Loss</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="relative block">
+                        <div class="steps-item">4</div>
+                        <span class="steps__text absolute poppins text-gray__dark font-normal whitespace-nowrap">We Write an Estimate</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="relative block">
+                        <div class="steps-item steps-item_last">5</div>
+                        <span class="steps__text absolute poppins text-gray__dark font-semibold whitespace-nowrap">We Demand a Payout</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-dark mt-28 lg:mt-8 w-2/3 px-5 m-auto lg:w-full sm:text-left">
+                <p class="">Your insurance company will contact us when we can start our negotiation. Their plan is to give the least, but ours is to get the most out of your claim.</p>
+                <p class="mt-4"> We never settle for less. After all the fights, pros and cons, when the deal has finally come to an end, your insurance company will send us the check that we will pass to you so your renovation can start</p>
+            </div>
+        </div>
+    </div>
+    <!-- End steps -->
+
+    <div class="disclaimer">
+        <div class="container flex justify-between sm:flex-col">
+            <div class="w-1/2 sm:w-full">
+                <p class="poppins font-bold text-3xl uppercase text-dark sm:text-lg">CLAIM DISCLAIMER</p>
+                <p class="text-sm text-dark mt-3">“Pursuant to Florida Statute 817.234, Any person who, with the intent to injury, defraud, or deceived any insurer or insured, prepares, present or causes to be presented a proof of loss or estimate of cost or repair of damaged property in support of a claim under an insurance policy knowing that the proof of loss or estimate of claim or repairs contains any false, incomplete or misleading information concerning any facts or thing material to the claim commits a felony of the third degree, punishable in S.775.082, S.775.803, or 775.084, Florida Statutes.</p>
+            </div>
+            <div class="w-2/5 sm:w-full sm:mt-4">
+                <p class="poppins font-bold text-3xl uppercase text-dark sm:text-lg">SOLICITATION DISCLAIMER</p>
+                <p class="text-sm text-dark mt-3">THIS IS A SOLICITATION FOR BUSINESS. IF YOU HAVE HAD A CLAIM FOR AN INSURED PROPERTY LOSS OR DAMAGE AND YOU ARE SATISFIED WITH THE PAYMENT BY YOUR INSURER, YOU MAY DISREGARD THIS ADVERTISEMENT</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End disclaimer -->
+
+    <div class="our-area">
+        <div class="container">
+            <p class="text-xl font-normal text-primary uppercase sm:text-sm text-center sm:text-left">Our area</p>
+            <p class="our-area__title font-bold text-dark poppins text-center sm:text-left">We Specialize in the following areas</p>
+            <div class="flex justify-between flex-wrap">
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Commercial Claims</p>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8788 2.84106L3.42539 0.0369437C2.56904 -0.0973852 1.6959 0.13769 1.04105 0.691797C0.386196 1.2627 0 2.08546 0 2.94181V38.3207C0 39.2442 0.7556 39.9998 1.67911 39.9998H7.13623V31.1845C7.13623 29.5557 8.44593 28.246 10.0747 28.246H14.2725C15.9012 28.246 17.2109 29.5557 17.2109 31.1845V39.9998H24.3471V5.74592C24.3471 4.30189 23.3061 3.07614 21.8788 2.84106ZM9.23512 24.468H6.71645C6.0213 24.468 5.45711 23.9038 5.45711 23.2087C5.45711 22.5135 6.0213 21.9494 6.71645 21.9494H9.23512C9.93027 21.9494 10.4944 22.5135 10.4944 23.2087C10.4944 23.9038 9.93027 24.468 9.23512 24.468ZM9.23512 19.4307H6.71645C6.0213 19.4307 5.45711 18.8665 5.45711 18.1714C5.45711 17.4762 6.0213 16.912 6.71645 16.912H9.23512C9.93027 16.912 10.4944 17.4762 10.4944 18.1714C10.4944 18.8665 9.93027 19.4307 9.23512 19.4307ZM9.23512 14.3934H6.71645C6.0213 14.3934 5.45711 13.8292 5.45711 13.134C5.45711 12.4389 6.0213 11.8747 6.71645 11.8747H9.23512C9.93027 11.8747 10.4944 12.4389 10.4944 13.134C10.4944 13.8292 9.93027 14.3934 9.23512 14.3934ZM9.23512 9.35601H6.71645C6.0213 9.35601 5.45711 8.79183 5.45711 8.09668C5.45711 7.40153 6.0213 6.83735 6.71645 6.83735H9.23512C9.93027 6.83735 10.4944 7.40153 10.4944 8.09668C10.4944 8.79183 9.93027 9.35601 9.23512 9.35601ZM17.6307 24.468H15.112C14.4169 24.468 13.8527 23.9038 13.8527 23.2087C13.8527 22.5135 14.4169 21.9494 15.112 21.9494H17.6307C18.3258 21.9494 18.89 22.5135 18.89 23.2087C18.89 23.9038 18.3258 24.468 17.6307 24.468ZM17.6307 19.4307H15.112C14.4169 19.4307 13.8527 18.8665 13.8527 18.1714C13.8527 17.4762 14.4169 16.912 15.112 16.912H17.6307C18.3258 16.912 18.89 17.4762 18.89 18.1714C18.89 18.8665 18.3258 19.4307 17.6307 19.4307ZM17.6307 14.3934H15.112C14.4169 14.3934 13.8527 13.8292 13.8527 13.134C13.8527 12.4389 14.4169 11.8747 15.112 11.8747H17.6307C18.3258 11.8747 18.89 12.4389 18.89 13.134C18.89 13.8292 18.3258 14.3934 17.6307 14.3934ZM17.6307 9.35601H15.112C14.4169 9.35601 13.8527 8.79183 13.8527 8.09668C13.8527 7.40153 14.4169 6.83735 15.112 6.83735H17.6307C18.3258 6.83735 18.89 7.40153 18.89 8.09668C18.89 8.79183 18.3258 9.35601 17.6307 9.35601Z" fill="#DA5E19"/>
+                        <path d="M37.9815 17.9059L26.0262 15.4023V39.9997H37.3603C38.9806 39.9997 40.2987 38.6816 40.2987 37.0612V20.7772C40.2987 19.3902 39.3534 18.2098 37.9815 17.9059ZM34.002 34.9623H31.4834C30.7882 34.9623 30.224 34.3981 30.224 33.703C30.224 33.0078 30.7882 32.4437 31.4834 32.4437H34.002C34.6972 32.4437 35.2614 33.0078 35.2614 33.703C35.2614 34.3981 34.6972 34.9623 34.002 34.9623ZM34.002 29.925H31.4834C30.7882 29.925 30.224 29.3608 30.224 28.6656C30.224 27.9705 30.7882 27.4063 31.4834 27.4063H34.002C34.6972 27.4063 35.2614 27.9705 35.2614 28.6656C35.2614 29.3608 34.6972 29.925 34.002 29.925ZM34.002 24.8876H31.4834C30.7882 24.8876 30.224 24.3235 30.224 23.6283C30.224 22.9332 30.7882 22.369 31.4834 22.369H34.002C34.6972 22.369 35.2614 22.9332 35.2614 23.6283C35.2614 24.3235 34.6972 24.8876 34.002 24.8876Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Residential Claims Friendly</p>
+                    <svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.3555 12.7637V15.4604L38.3016 18.2829V12.7637H35.3555Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.2239 10.915C27.3221 10.8168 13.9081 23.674 13.9081 23.674C13.7515 23.8276 13.7055 24.0618 13.7922 24.2633C13.8487 24.4328 14.0064 24.5479 14.185 24.5501H40.8148C40.9934 24.5479 41.1511 24.4328 41.2076 24.2633C41.2943 24.0618 41.2483 23.8277 41.0917 23.674C41.0917 23.674 28.2276 11.3638 27.7739 10.914C27.6208 10.7646 27.3765 10.765 27.2239 10.915Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6064 1.96094V4.66454L24.5526 7.48898V1.96094H21.6064Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52.0505 28.4793V15.7124H40.2657V20.168L42.4489 22.2598C43.1849 22.9667 43.4143 24.0516 43.0274 24.9958C42.6784 25.9138 41.7967 26.5191 40.8147 26.5151H40.2657V29.4614H51.0685C51.6109 29.4614 52.0505 29.0217 52.0505 28.4793Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.92924 29.4614H14.7319V26.5151H14.183C13.201 26.5191 12.3193 25.9137 11.9703 24.9958C11.5834 24.0516 11.8128 22.9667 12.5488 22.2598L19.382 15.7124H2.94727V28.4793C2.94727 29.0217 3.38691 29.4614 3.92924 29.4614Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4092 34.3721V40.2645H37.3195C37.8618 40.2645 38.3016 39.8248 38.3016 39.2824V26.5156H16.6962V39.2825C16.6962 39.8248 17.1358 40.2646 17.6782 40.2646H22.5886V34.3722C22.5886 31.6603 24.787 29.4619 27.4989 29.4619C30.2107 29.4619 32.4092 31.6602 32.4092 34.3721Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.4451 34.372C30.4451 32.7449 29.1261 31.4258 27.4989 31.4258C25.8718 31.4258 24.5526 32.7448 24.5526 34.372V40.2644H30.445V34.372H30.4451Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52.3511 10.4921L52.3314 10.4734L47.4408 5.78789L47.4211 5.76823L41.5209 0.116447C41.4497 0.0426536 41.3515 0.000976562 41.2488 0.000976562C41.1462 0.000976562 41.048 0.0426536 40.9767 0.116447L30.1603 10.4812L33.3913 13.5776V12.7664C33.3913 11.6817 34.2707 10.8023 35.3554 10.8023H38.3017C39.3865 10.8023 40.2659 11.6817 40.2659 12.7664V13.7485H54.5648C54.7457 13.7455 54.9041 13.6267 54.9576 13.4539C55.0429 13.2564 54.9975 13.0268 54.8436 12.8764L52.3511 10.4921Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52.0505 1.96094H49.1044V4.66261L52.0505 7.48501V1.96094Z" fill="#DA5E19"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4789 0.1144L0.160039 12.8734C0.00364445 13.0238 -0.0432953 13.2554 0.042206 13.4549C0.095698 13.6277 0.254133 13.7465 0.435018 13.7495H21.4316L24.8384 10.4851L14.023 0.116442C13.952 0.0423261 13.8539 0.000327408 13.7513 5.16674e-06C13.6487 -0.000531902 13.5503 0.0408218 13.4789 0.1144Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Water <br> Damage</p>
+                    <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.07119 0H2.53559C1.13747 0 0 1.13747 0 2.53559V17.0264C0 18.4246 1.13747 19.562 2.53559 19.562H5.07119C6.46932 19.562 7.60678 18.4246 7.60678 17.0264V2.53559C7.60678 1.13747 6.46932 0 5.07119 0Z" fill="#DA5E19"/>
+                        <path d="M40.7385 0H38.203C36.8048 0 35.6674 1.13747 35.6674 2.53559V17.0264C35.6674 18.4246 36.8048 19.562 38.203 19.562H40.7385C42.1367 19.562 43.2741 18.4246 43.2741 17.0264V2.53559C43.2741 1.13747 42.1367 0 40.7385 0Z" fill="#DA5E19"/>
+                        <path d="M10.0555 17.9561H19.5396C19.5607 17.8922 19.5856 17.8289 19.6177 17.7672L21.4683 14.2037L18.63 10.5602C18.2731 10.1021 18.2731 9.46005 18.63 9.00195L21.4683 5.35847L19.6177 1.79503C19.5857 1.73333 19.5607 1.66994 19.5396 1.60596H10.0555C10.1117 1.90761 10.1424 2.21805 10.1424 2.53568V17.0265C10.1424 17.3441 10.1117 17.6545 10.0555 17.9561Z" fill="#DA5E19"/>
+                        <path d="M33.2187 1.60596H22.3765L24.0932 4.9117C24.3217 5.35154 24.2728 5.8841 23.9682 6.27509L21.2371 9.78105L23.9682 13.2871C24.2728 13.6781 24.3217 14.2107 24.0932 14.6505L22.3766 17.9561H33.2188C33.1626 17.6544 33.1319 17.3441 33.1319 17.0263V2.53568C33.1318 2.21797 33.1626 1.90761 33.2187 1.60596Z" fill="#DA5E19"/>
+                        <path d="M23.7358 23.0253C22.7311 21.7363 22.2799 21.3833 21.637 21.3833C20.9942 21.3833 20.543 21.7363 19.5383 23.0253C18.9015 23.8424 18.1922 24.8647 17.5411 25.9038C16.2479 27.9677 14.7064 30.848 14.7064 32.8483C14.7064 36.6699 17.8155 39.779 21.637 39.779C25.4586 39.779 28.5677 36.6699 28.5677 32.8483C28.5677 30.848 27.0262 27.9677 25.733 25.9038C25.0819 24.8647 24.3726 23.8424 23.7358 23.0253Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Fire <br> Damage</p>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7969 10.938C17.4441 10.938 17.9687 10.4133 17.9687 9.7661C17.9687 9.1189 17.4441 8.59424 16.7969 8.59424C16.1497 8.59424 15.625 9.1189 15.625 9.7661C15.625 10.4133 16.1497 10.938 16.7969 10.938Z" fill="#DA5E19"/>
+                        <path d="M33.1535 12.7567L17.5288 0.256813C17.1007 -0.0856044 16.4926 -0.0856044 16.0647 0.256813L0.439849 12.7567C-0.0655351 13.161 -0.147487 13.8984 0.256883 14.4038C0.661253 14.9091 1.39859 14.9912 1.90397 14.5867L3.90621 12.985V28.1247H2.73435C2.08717 28.1247 1.56249 28.6494 1.56249 29.2965C1.56249 29.9437 2.08717 30.4684 2.73435 30.4684H11.7186V18.3592C11.7186 17.712 12.2433 17.1873 12.8905 17.1873H20.7029C21.3501 17.1873 21.8747 17.712 21.8747 18.3592V30.4684H22.8644C23.4017 24.6216 28.0107 19.616 29.6872 17.9738V12.9849L31.6895 14.5868C31.9056 14.7597 32.164 14.8437 32.4207 14.8437C32.7645 14.8437 33.1052 14.6931 33.3366 14.4038C33.7409 13.8984 33.659 13.161 33.1535 12.7567ZM16.7968 13.2811C14.8583 13.2811 13.2812 11.704 13.2812 9.76553C13.2812 7.82703 14.8583 6.24994 16.7968 6.24994C18.7353 6.24994 20.3123 7.82703 20.3123 9.76553C20.3123 11.704 18.7353 13.2811 16.7968 13.2811Z" fill="#DA5E19"/>
+                        <path d="M32.5779 31.2168C31.7001 32.324 30.6248 34.0504 30.6248 35.6245C30.6248 36.9913 31.2637 37.6557 32.5779 37.6557C33.8921 37.6557 34.531 36.9913 34.531 35.6245C34.531 34.0504 33.4557 32.3239 32.5779 31.2168Z" fill="#DA5E19"/>
+                        <path d="M35.9575 25.2252C34.5545 23.9379 33.7497 22.0619 33.7497 20.0782C33.7497 19.6152 33.4771 19.1956 33.0541 19.0074C32.6312 18.8192 32.137 18.8978 31.793 19.2079C31.5221 19.4523 25.1561 25.2656 25.1561 31.5757C25.1561 36.5357 28.208 39.9998 32.5779 39.9998C29.9676 39.9998 28.281 38.2825 28.281 35.6249C28.281 32.043 31.6183 28.7519 31.7603 28.6136C32.2153 28.1704 32.9403 28.1704 33.3954 28.6136C33.5374 28.7519 36.8747 32.043 36.8747 35.6249C36.8747 38.2826 35.1881 39.9998 32.5779 39.9998C34.8179 39.9998 36.7155 39.2273 38.0654 37.7658C39.3127 36.4153 39.9996 34.5311 39.9996 32.4602C39.9996 29.5456 37.8015 26.917 35.9575 25.2252Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Flood <br> Damage</p>
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.9923 21.4844V26.9374C19.7656 26.6252 20.7452 26.3828 21.9933 26.3828C23.2488 26.3828 24.2325 26.6283 25.0079 26.9433V21.4844H18.9923Z" fill="#DA5E19"/>
+                        <path d="M16.3677 27.8879C16.3829 27.8979 16.3983 27.9082 16.4141 27.9186V20.1952C16.4141 19.4833 16.9912 18.9062 17.7031 18.9062H26.2969C27.0088 18.9062 27.5859 19.4833 27.5859 20.1952V27.9087C27.5967 27.9016 27.6075 27.8944 27.618 27.8875C28.4661 27.3245 29.885 26.3828 32.3463 26.3828C34.093 26.3828 35.3144 26.8568 36.1797 27.333V14.2835L38.3823 16.0456C38.62 16.2358 38.9042 16.3281 39.1866 16.3281C39.5648 16.3281 39.9395 16.1625 40.1941 15.8443C40.6388 15.2884 40.5487 14.4771 39.9927 14.0325L22.8052 0.282498C22.3344 -0.094166 21.6655 -0.094166 21.1948 0.282498L4.00726 14.0325C3.45124 14.4772 3.36118 15.2884 3.80591 15.8443C4.25063 16.4002 5.06189 16.4904 5.61773 16.0456L7.82031 14.2835V27.3271C8.68467 26.8527 9.90231 26.3827 11.6404 26.3827C14.1015 26.3827 15.5201 27.3249 16.3677 27.8879ZM22 6.87494C24.1324 6.87494 25.8672 8.60976 25.8672 10.7421C25.8672 12.8745 24.1324 14.6093 22 14.6093C19.8676 14.6093 18.1328 12.8745 18.1328 10.7421C18.1328 8.60976 19.8676 6.87494 22 6.87494Z" fill="#DA5E19"/>
+                        <path d="M42.711 28.9609C41.0268 28.9609 40.1288 29.5566 39.4074 30.0352C38.8222 30.4232 38.4356 30.6797 37.5287 30.6797C36.6218 30.6797 36.2353 30.4232 35.6501 30.0352C34.9286 29.5566 34.0306 28.9609 32.3464 28.9609C30.6628 28.9609 29.7654 29.5567 29.0441 30.0353C28.4596 30.4233 28.0734 30.6797 27.1677 30.6797C26.2633 30.6797 25.8776 30.4235 25.2939 30.0357C24.5729 29.5568 23.676 28.9609 21.9933 28.9609C20.31 28.9609 19.4127 29.5567 18.6917 30.0355C18.1074 30.4234 17.7215 30.6797 16.8162 30.6797C15.9114 30.6797 15.5255 30.4234 14.9416 30.0356C14.2207 29.5568 13.3235 28.9609 11.6405 28.9609C9.95747 28.9609 9.06037 29.5568 8.33944 30.0356C7.7554 30.4234 7.36963 30.6797 6.4648 30.6797C5.56005 30.6797 5.17419 30.4234 4.59024 30.0356C3.86923 29.5568 2.97212 28.9609 1.28912 28.9609C0.577217 28.9609 6.10352e-05 29.5381 6.10352e-05 30.25V34.332H1.28912C2.97212 34.332 3.86923 34.9279 4.59015 35.4067C5.17419 35.7945 5.55996 36.0508 6.46471 36.0508C7.36955 36.0508 7.7554 35.7945 8.33935 35.4067C9.06028 34.9279 9.95738 34.332 11.6404 34.332C13.3234 34.332 14.2205 34.9279 14.9414 35.4067C15.5254 35.7945 15.9112 36.0508 16.8161 36.0508C17.7213 36.0508 18.1073 35.7945 18.6916 35.4066C19.4126 34.9278 20.3098 34.332 21.9931 34.332C23.6758 34.332 24.5729 34.9279 25.2936 35.4068C25.8773 35.7946 26.263 36.0508 27.1674 36.0508C28.0732 36.0508 28.4594 35.7945 29.0438 35.4064C29.7651 34.9278 30.6626 34.332 32.3462 34.332C34.0305 34.332 34.9284 34.9277 35.6499 35.4062C36.2351 35.7943 36.6216 36.0508 37.5285 36.0508C38.4354 36.0508 38.822 35.7943 39.4071 35.4062C40.1287 34.9277 41.0266 34.332 42.7107 34.332H43.9998V30.25C44.0001 29.5381 43.4229 28.9609 42.711 28.9609Z" fill="#DA5E19"/>
+                        <path d="M42.711 36.9102C41.8041 36.9102 41.4176 37.1666 40.8324 37.5547C40.1109 38.0333 39.2129 38.6289 37.5287 38.6289C35.8445 38.6289 34.9465 38.0333 34.2251 37.5547C33.6399 37.1666 33.2533 36.9102 32.3464 36.9102C31.4406 36.9102 31.0545 37.1664 30.47 37.5545C29.7487 38.0332 28.8513 38.6289 27.1677 38.6289C25.485 38.6289 24.588 38.033 23.8672 37.5542C23.2835 37.1663 22.8979 36.9102 21.9934 36.9102C21.0881 36.9102 20.7021 37.1664 20.1179 37.5543C19.3968 38.0331 18.4996 38.6289 16.8163 38.6289C15.1333 38.6289 14.2362 38.033 13.5153 37.5543C12.9312 37.1664 12.5455 36.9102 11.6406 36.9102C10.7358 36.9102 10.3499 37.1664 9.766 37.5543C9.04507 38.033 8.14797 38.6289 6.46497 38.6289C4.78205 38.6289 3.88495 38.033 3.16402 37.5543C2.57982 37.1664 2.19396 36.9102 1.28912 36.9102H6.10352e-05V40.9922C6.10352e-05 41.7041 0.577217 42.2812 1.28912 42.2812C2.19396 42.2812 2.57982 42.5375 3.16376 42.9254C3.88469 43.4041 4.78188 44 6.4648 44C8.14779 44 9.0449 43.4041 9.76583 42.9254C10.3499 42.5375 10.7356 42.2812 11.6405 42.2812C12.5453 42.2812 12.9312 42.5375 13.5151 42.9254C14.236 43.4041 15.1331 44 16.8161 44C18.4994 44 19.3967 43.4042 20.1177 42.9254C20.702 42.5375 21.0879 42.2812 21.9932 42.2812C22.8976 42.2812 23.2833 42.5374 23.8671 42.9253C24.5879 43.4041 25.4848 44 27.1675 44C28.8511 44 29.7485 43.4043 30.4698 42.9256C31.0543 42.5376 31.4405 42.2812 32.3462 42.2812C33.2532 42.2812 33.6398 42.5377 34.2249 42.9258C34.9465 43.4044 35.8443 44 37.5285 44C39.2127 44 40.1108 43.4044 40.8322 42.9258C41.4175 42.5377 41.804 42.2812 42.7108 42.2812C43.4227 42.2812 43.9999 41.7041 43.9999 40.9922V36.9102H42.711Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Wind <br> Damage</p>
+                    <svg width="52" height="42" viewBox="0 0 52 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.7421 26.7793H11.4857V29.7821H42.7421C43.8861 29.7821 44.8168 30.7128 44.8168 31.8568C44.8168 33.0009 43.8862 33.9316 42.7421 33.9316H40.0123V36.9344H42.7421C45.5418 36.9344 47.8195 34.6567 47.8195 31.8569C47.8195 29.057 45.5418 26.7793 42.7421 26.7793Z" fill="#DA5E19"/>
+                        <path d="M32.2936 32.8584H8.54956V35.8612H32.2936C33.1583 35.8612 33.8617 36.5646 33.8617 37.4293C33.8617 38.294 33.1583 38.9975 32.2936 38.9975V42.0004C34.814 42.0004 36.8644 39.9498 36.8644 37.4294C36.8645 34.9088 34.814 32.8584 32.2936 32.8584Z" fill="#DA5E19"/>
+                        <path d="M4.81287 26.7793H8.54962V29.7821H4.81287V26.7793Z" fill="#DA5E19"/>
+                        <path d="M46.6517 14.5625V17.5653C47.5164 17.5653 48.2199 18.2688 48.2199 19.1335C48.2199 19.9982 47.5164 20.7017 46.6517 20.7017H40.4579C39.5529 21.9863 38.3243 23.027 36.8916 23.7046H46.6517C49.1721 23.7046 51.2227 21.654 51.2227 19.1336C51.2227 16.6132 49.1721 14.5625 46.6517 14.5625Z" fill="#DA5E19"/>
+                        <path d="M33.0141 21.5699C36.3761 21.5699 39.1114 18.8347 39.1114 15.4726C39.1114 12.1105 36.3762 9.37526 33.0141 9.37526C32.3591 9.37526 31.7113 9.4802 31.0887 9.6874L29.1936 10.318L29.1145 8.32239C28.9294 3.65562 25.1231 0 20.4492 0C17.5372 0 14.8722 1.44674 13.2775 3.79268C15.7663 4.93219 17.471 7.45341 17.471 10.3065H14.4682C14.4682 8.23645 12.9247 6.46607 10.8779 6.18834L10.878 6.18764L10.8678 6.18614C10.6673 6.15753 10.4677 6.14302 10.2748 6.14302C8.00065 6.14302 6.14873 7.98554 6.13342 10.2561L6.13352 11.7337L4.69218 11.7913C2.06101 11.8967 0 14.0431 0 16.6779C0 19.3753 2.19457 21.5699 4.89197 21.5699H33.0141Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Roof <br> Leaks</p>
+                    <svg width="55" height="42" viewBox="0 0 55 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.85174 11.556C7.56795 10.8397 8.02155 9.83705 8.02155 8.71499C8.02155 8.30913 7.90218 7.85553 7.7112 7.37806C7.49633 6.87671 7.20985 6.37537 6.87562 5.85015C6.87562 5.82627 6.85174 5.82627 6.85174 5.8024C6.15941 4.75196 5.25221 3.72539 4.48825 2.84206L4.01078 2.29297L3.5333 2.84206C2.05314 4.56097 0 6.92446 0 8.71499C0 9.81318 0.4536 10.8159 1.16981 11.556C1.88602 12.2722 2.88871 12.7258 4.01078 12.7258C5.10897 12.7258 6.11166 12.2722 6.85174 11.556Z" fill="#DA5E19"/>
+                        <path d="M17.5709 0.143242L17.4516 0L17.3322 0.143242C16.4489 1.16981 15.2313 2.57836 15.2313 3.58105C15.2313 4.20177 15.4701 4.75086 15.8759 5.15671C16.2818 5.56257 16.8309 5.8013 17.4516 5.8013C18.0723 5.8013 18.6214 5.56257 19.0272 5.15671C19.4331 4.75086 19.6718 4.20177 19.6718 3.58105C19.6718 2.57836 18.4543 1.16981 17.5709 0.143242Z" fill="#DA5E19"/>
+                        <path d="M9.90769 3.46191C9.54959 3.89164 9.14374 4.34524 8.73788 4.84659L8.11717 5.5628C8.40365 6.0164 8.64239 6.47 8.83338 6.9236C9.09599 7.54431 9.23923 8.14115 9.23923 8.71412C9.23923 10.1465 8.66626 11.4596 7.71132 12.4145C6.75637 13.3695 5.46719 13.9425 4.0109 13.9425C3.67666 13.9425 3.36631 13.9186 3.05595 13.847C2.93658 13.8231 2.84108 13.7992 2.72172 13.7753C2.67397 13.9663 2.62622 14.1573 2.57847 14.3483C2.50685 14.7064 2.45911 15.0406 2.45911 15.3988C2.45911 17.4519 3.29468 19.314 4.63161 20.6748C5.99241 22.0356 7.85456 22.8473 9.90769 22.8473C11.9608 22.8473 13.823 22.0118 15.1838 20.6748C16.5446 19.3379 17.3563 17.4519 17.3563 15.3988C17.3563 12.1281 13.7036 7.92629 11.0775 4.87046C10.6716 4.34524 10.2897 3.89164 9.90769 3.46191Z" fill="#DA5E19"/>
+                        <path d="M54.4937 38.7344L49.4315 33.4595V16.7963C49.4315 15.7988 48.6554 14.9902 47.6981 14.9902H38.4151C37.4578 14.9902 36.6817 15.7988 36.6817 16.7963V20.1743L30.3577 13.5846C29.6808 12.8794 28.5833 12.8794 27.9064 13.5846L3.77036 38.7344C2.68309 39.8597 3.46425 41.8232 4.99596 41.8176H11.0227L27.9062 24.2248C28.5831 23.5196 29.6806 23.5196 30.3575 24.2248L47.2411 41.8176H53.2678C54.8005 41.823 55.5805 39.8593 54.4937 38.7344Z" fill="#DA5E19"/>
+                        <path d="M15.9253 41.819H42.3387L29.1319 28.0576L15.9253 41.819Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Sinkholes</p>
+                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.465952 16.0413C0.199239 16.4738 0.0714111 16.9368 0.0714111 17.4235C0.0714111 21.5589 9.66445 22.8309 13.7597 23.1782C14.9922 24.1169 17.2958 25.5172 18.8338 28.5865C18.9044 28.7274 19.0494 28.8157 19.207 28.8157H24.8287C25.5506 28.8157 26.1715 29.3708 26.2051 30.0918C26.2409 30.8615 25.6281 31.4962 24.8663 31.4962H17.5325C16.8106 31.4962 16.1897 32.0513 16.1561 32.7723C16.1203 33.542 16.7331 34.1768 17.4949 34.1768H20.1854C20.2794 36.3347 19.8053 39.0044 19.1392 40.6988C18.6059 41.3445 18.6999 42.5012 19.6343 42.8969C20.0578 43.0751 20.5866 43.0274 20.9871 42.7134C21.9136 42.4311 23.9583 41.689 26.0047 40.156C28.5428 38.2545 31.5677 34.7439 31.5677 28.8157H33.5404C34.2623 28.8157 34.8832 28.2607 34.9168 27.5395C34.9527 26.7699 34.3398 26.1352 33.5781 26.1352H27.5845C26.8626 26.1352 26.2416 25.5801 26.2081 24.859C26.1722 24.0894 26.7851 23.4547 27.5469 23.4547H30.3959C30.673 23.4547 30.8743 23.1902 30.7993 22.9235C30.4655 21.735 30.2274 20.6841 30.2274 18.0936C30.2274 17.462 30.3313 16.8832 30.5181 16.3353C33.1135 16.0808 36.2871 15.6262 38.7691 14.8644C40.5684 14.3115 42.9599 13.3507 42.9599 11.3923C42.9599 9.80279 41.3527 8.86778 39.8221 8.27958C39.6204 8.20209 39.3941 8.29315 39.2983 8.48681C39.0344 9.02049 38.7274 9.55886 38.4044 10.069C38.2599 10.2973 38.3632 10.5996 38.6178 10.6904C39.4294 10.98 39.8693 11.2319 40.0985 11.3964C39.647 11.7164 38.5539 12.219 36.4672 12.7066C32.0731 13.7348 26.094 14.0709 21.5541 14.0728C20.8312 14.0731 20.2097 13.5173 20.1769 12.7951C20.142 12.0261 20.7545 11.3923 21.5157 11.3923C25.6699 11.3923 30.6557 11.122 34.7588 10.3772C34.8598 10.3588 34.9506 10.3038 35.0137 10.2229C37.0719 7.58456 38.2676 4.87237 38.2691 1.34697C38.2694 0.606219 37.6695 0 36.9288 0H6.10269C5.36244 0 4.76242 0.60069 4.76242 1.34094C4.76242 2.11377 4.76242 2.86875 4.76946 3.60691C4.77147 3.83643 4.95877 4.0208 5.18829 4.0208H20.1378C20.8597 4.0208 21.4806 4.57583 21.5142 5.2969C21.5499 6.06663 20.9372 6.70133 20.1754 6.70133H2.11942C1.39752 6.70133 0.776642 7.25637 0.743052 7.97743C0.7072 8.74716 1.32004 9.38186 2.08181 9.38186H5.11081C5.48106 12.038 6.2146 14.3628 7.59039 16.6335C7.64919 16.7305 7.74519 16.7997 7.85584 16.8249C11.6736 17.6941 16.2589 18.0077 20.1369 18.0098C20.8586 18.0102 21.4796 18.5632 21.5141 19.2841C21.551 20.0546 20.9378 20.6904 20.1754 20.6904C17.7696 20.6904 15.4225 20.5798 13.2002 20.362C10.0122 20.0513 10.0795 19.8881 10.2222 20.0445C8.69083 19.797 7.05646 19.4534 5.57823 18.9639C3.54354 18.2854 2.86754 17.6387 2.76032 17.4226C2.83822 17.2578 3.18418 16.9182 4.00995 16.5112C4.21333 16.4111 4.29995 16.167 4.20563 15.9608C3.95366 15.4097 3.73008 14.8545 3.54203 14.3231C3.45558 14.0787 3.17036 13.9722 2.94385 14.0981C2.24892 14.4843 0.932448 15.2849 0.465952 16.0413Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Business Interruption</p>
+                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.5588 6.95588C26.5588 3.11404 29.6726 0 33.5147 0C37.3565 0 40.4706 3.11378 40.4706 6.95588C40.4706 10.7977 37.3568 13.9118 33.5147 13.9118C29.6729 13.9118 26.5588 10.798 26.5588 6.95588ZM35.6207 3.06136C34.9944 2.72206 34.2771 2.52941 33.5147 2.52941C31.0696 2.52941 29.0882 4.51095 29.0882 6.95588C29.0882 7.71829 29.2809 8.43561 29.6202 9.06184L35.6207 3.06136ZM37.4092 4.84992L31.4087 10.8504C32.035 11.1897 32.7523 11.3824 33.5147 11.3824C35.9598 11.3824 37.9412 9.40082 37.9412 6.95588C37.9412 6.19347 37.7485 5.47615 37.4092 4.84992ZM26.5588 40.4706H28.4559V17.7059C28.4559 17.0074 29.0221 16.4412 29.7206 16.4412H37.3088C38.0073 16.4412 38.5735 17.0074 38.5735 17.7059V40.4706H41.7353C42.4338 40.4706 43 41.0368 43 41.7353C43 42.4338 42.4338 43 41.7353 43H1.26471C0.566228 43 0 42.4338 0 41.7353C0 41.0368 0.566228 40.4706 1.26471 40.4706H4.42647V31.6176C4.42647 30.9192 4.9927 30.3529 5.69118 30.3529H13.2794C13.9779 30.3529 14.5441 30.9192 14.5441 31.6176V40.4706H16.4412V25.9265C16.4412 25.228 17.0074 24.6618 17.7059 24.6618H25.2941C25.9926 24.6618 26.5588 25.228 26.5588 25.9265V40.4706Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+                <div class="our-area-item">
+                    <p class="text-2xl font-semibold sm:text-sm">Mold <br> Damage</p>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.6994 17.3703C14.6994 18.1081 14.1011 18.7062 13.3633 18.7062C12.6255 18.7062 12.0274 18.1081 12.0274 17.3703C12.0274 16.6323 12.6255 16.0342 13.3633 16.0342C14.1011 16.0342 14.6994 16.6323 14.6994 17.3703Z" fill="#DA5E19"/>
+                        <path d="M20.7113 23.3828C20.7113 24.1205 20.1131 24.7186 19.3754 24.7186C18.6376 24.7186 18.0392 24.1205 18.0392 23.3828C18.0392 22.645 18.6376 22.0469 19.3754 22.0469C20.1131 22.0469 20.7113 22.645 20.7113 23.3828Z" fill="#DA5E19"/>
+                        <path d="M24.0514 15.3663C24.0514 16.4732 23.1541 17.3705 22.0474 17.3705C20.9405 17.3705 20.0432 16.4732 20.0432 15.3663C20.0432 14.2596 20.9405 13.3623 22.0474 13.3623C23.1541 13.3623 24.0514 14.2596 24.0514 15.3663Z" fill="#DA5E19"/>
+                        <path d="M37.4112 17.3708C36.1931 17.3698 35.1289 18.1947 34.8261 19.3747H32.7014C32.5509 16.299 31.337 13.3712 29.267 11.0914L30.758 9.60849C31.3071 9.96485 31.9474 10.1551 32.6017 10.1563C34.4442 10.1511 35.9334 8.65326 35.9283 6.81105C35.9231 4.96859 34.4255 3.47931 32.5831 3.48446C30.7406 3.48937 29.2513 4.98725 29.2565 6.8297C29.2582 7.48059 29.4506 8.11699 29.8094 8.65989L28.3265 10.1509C26.047 8.08092 23.1189 6.86701 20.0434 6.7168V5.25992C21.4721 4.89079 22.3314 3.43341 21.9625 2.00475C21.5936 0.575849 20.1362 -0.283409 18.7073 0.0854756C17.2784 0.45436 16.4191 1.91198 16.7883 3.34064C17.0313 4.28187 17.7661 5.01694 18.7073 5.25992V6.7168C15.6318 6.86701 12.7038 8.08092 10.4242 10.1509L8.94107 8.65989C9.96305 7.1198 9.54312 5.04296 8.00279 4.02098C6.4627 2.999 4.38586 3.41918 3.36388 4.95927C2.34214 6.49935 2.76208 8.57644 4.30216 9.59818C4.84972 9.96142 5.49202 10.1556 6.14904 10.1563C6.80336 10.1551 7.44369 9.96485 7.99248 9.60849L9.48348 11.0914C7.41375 13.3712 6.19984 16.299 6.04939 19.3747H4.57926C4.21013 18.1373 2.90811 17.4331 1.67064 17.8022C0.433172 18.1711 -0.270973 19.4734 0.0981569 20.7106C0.467041 21.9481 1.7693 22.6522 3.00653 22.2833C3.76246 22.0578 4.3537 21.4665 4.57926 20.7106H6.04866C6.19911 23.7864 7.41301 26.7141 9.48299 28.9939L7.99273 30.4768C6.45436 29.4588 4.38193 29.8807 3.36412 31.4191C2.48695 32.7446 2.66538 34.5046 3.79093 35.6272C5.08755 36.9312 7.19605 36.9373 8.50028 35.6405C8.5047 35.6361 8.50911 35.6316 8.51353 35.6272C9.63467 34.5054 9.81334 32.75 8.94107 31.4254L10.4242 29.9344C12.7038 32.0044 15.6318 33.2183 18.7073 33.3685V34.8254C17.2784 35.1945 16.4191 36.6519 16.7883 38.0806C17.1572 39.5095 18.6145 40.3687 20.0434 39.9998C21.4721 39.631 22.3314 38.1736 21.9625 36.7447C21.7195 35.8035 20.9844 35.0684 20.0434 34.8254V33.3685C23.1189 33.2183 26.047 32.0044 28.3265 29.9344L29.8094 31.4254C28.7943 32.969 29.2226 35.0433 30.7661 36.0587C31.3112 36.4173 31.9494 36.6085 32.6017 36.6092C33.4875 36.6109 34.3369 36.257 34.9598 35.6272C36.2658 34.3245 36.2687 32.2098 34.9662 30.9036C33.8436 29.7783 32.0836 29.5997 30.758 30.4768L29.267 28.9939C31.337 26.7141 32.5509 23.7864 32.7014 20.7109H34.8261C35.1952 22.1395 36.6526 22.9988 38.0812 22.6299C39.5101 22.261 40.3694 20.8036 40.0005 19.3747C39.6957 18.1942 38.6305 17.3698 37.4112 17.3708ZM22.0474 12.0267C23.8918 12.0267 25.3872 13.5221 25.3872 15.3666C25.3872 17.2112 23.8918 18.7067 22.0474 18.7067C20.2027 18.7067 18.7073 17.2112 18.7073 15.3666C18.7095 13.5229 20.2035 12.0289 22.0474 12.0267ZM12.6419 23.6364C12.6095 23.7181 12.5619 23.793 12.5016 23.8568C12.3734 23.9788 12.2041 24.048 12.0274 24.0507C11.94 24.0495 11.8539 24.0313 11.7734 23.9972C11.6926 23.9633 11.618 23.9159 11.553 23.8568C11.4926 23.793 11.445 23.7181 11.4128 23.6364C11.3785 23.5561 11.3603 23.4698 11.3593 23.3826C11.3618 23.2057 11.431 23.0363 11.553 22.9082C11.618 22.8493 11.6926 22.8019 11.7734 22.7681C12.0225 22.6672 12.3077 22.7222 12.5016 22.9082C12.6235 23.0363 12.6927 23.2057 12.6952 23.3826C12.6942 23.47 12.6761 23.5561 12.6419 23.6364ZM15.9818 27.6446C15.9496 27.7263 15.902 27.8011 15.8416 27.865C15.7135 27.9869 15.5442 28.0561 15.3672 28.0586C15.2801 28.0576 15.1937 28.0395 15.1134 28.0051C15.0325 27.9712 14.9581 27.9239 14.893 27.865C14.8327 27.8009 14.7851 27.7263 14.7527 27.6446C14.7185 27.5641 14.7004 27.4779 14.6994 27.3905C14.7019 27.2138 14.7711 27.0445 14.893 26.9164C14.9578 26.8575 15.0325 26.8101 15.1134 26.776C15.3626 26.6753 15.6478 26.7301 15.8414 26.9164C15.9634 27.0445 16.0326 27.2138 16.0353 27.3905C16.0343 27.4779 16.0161 27.5643 15.9818 27.6446ZM13.3633 20.0428C11.8875 20.0428 10.6913 18.8463 10.6913 17.3708C10.6913 15.895 11.8877 14.6987 13.3633 14.6987C14.8391 14.6987 16.0353 15.895 16.0353 17.3708C16.0353 18.8463 14.8391 20.0428 13.3633 20.0428ZM16.7034 23.3826C16.7034 21.9068 17.8996 20.7106 19.3754 20.7106C20.8509 20.7106 22.0471 21.9071 22.0471 23.3826C22.0471 24.8584 20.8509 26.0546 19.3754 26.0546C17.8996 26.0546 16.7034 24.8584 16.7034 23.3826ZM19.3754 30.7306C19.0065 30.7306 18.7073 30.4317 18.7073 30.0625C18.7073 29.6937 19.0065 29.3947 19.3754 29.3947C24.538 29.3891 28.7217 25.2052 28.7273 20.0425C28.7273 19.6737 29.0263 19.3747 29.3954 19.3747C29.7643 19.3747 30.0634 19.6737 30.0634 20.0425C30.0563 25.9425 25.2753 30.7237 19.3754 30.7306Z" fill="#DA5E19"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End our-area -->
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-item w-full flex justify-between sm:flex-col sm:justify-center sm:items-center">
+                <li class="sm:mb-4"><a href="./our_team.html" class="text-gray text-sm font-medium hover:text-white transition-all">Join Our Team</a></li>
+                <li class="sm:mb-4"><a href="./file_a_claim.html" class="text-gray text-sm font-medium hover:text-white transition-all">File A Claim</a></li>
+                <li class="sm:mb-4"><a href="./types_of_damage.html" class="text-gray text-sm font-medium hover:text-white transition-all">Type of Damages</a></li>
+                <li class="sm:mb-4"><a href="./contact_us.html" class="text-gray text-sm font-medium hover:text-white transition-all">Contact Us</a></li>
+                <li class="sm:mb-4"><a href="./faq.html" class="text-gray text-sm font-medium hover:text-white transition-all">FAQ</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">More</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Privacy policy</a></li>
+                <li><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Terms of Use</a></li>
+            </ul>
+
+            <div class="flex items-center justify-between flex-wrap sm:flex-col">
+                <a href="../index.html">
+                    <img loading="lazy" src="../assets/img/png/logo-footer.png" alt="logo.png" class="">
+                </a>
+                <p class="text-sm text-gray sm:hidden">© 2000-2022, All Rights Reserved</p>
+                <div class="flex items-center sm:mt-4 flex-wrap justify-center">
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l1.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l2.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l3.png" alt="brend" class="">
+                    </a>
+                    <a href="#">
+                        <img loading="lazy" src="../assets/img/png/f-l4.png" alt="brend" class="">
+                    </a>
+                </div>
+                <p class="text-sm text-gray hidden sm:block text-center mt-4">© 2000-2022, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <script src="assets/js/plugin/ckin.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

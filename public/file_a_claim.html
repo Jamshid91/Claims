@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join our file</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/plugins/tailwind.css">
+    <link rel="stylesheet" href="../assets/styles/css/main.css">
+</head>
+<body class="relative">
+    <header class="header">
+        <div class="container flex items-center justify-between">
+            <div class="logo lg:w-1/6 md:w-1/3 sm:w-1/2">
+                <a href="../index.html" class="lg:w-full">
+                    <img loading="lazy" src="../assets/img/png/logo.png" alt="logo.png" class="lg:w-full">
+                </a>
+            </div>
+            <ul class="flex items-center justify-between w-2/5 lg:w-1/2 md:hidden">
+                <li class=""><a href="./our_team.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Join Our Team</a></li>
+                <li class=""><a href="./file_a_claim.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">File A Claim</a></li>
+                <li class=""><a href="./types_of_damage.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Type of Damages</a></li>
+                <li class=""><a href="./contact_us.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Contact Us</a></li>
+                <li class=""><a href="#" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">More</a></li>
+            </ul>
+            <div class="flex items-center md:hidden">
+                <a href="tel:18772743453" class="flex items-center mr-7">
+                    <svg class="mr-4 md:mr-1" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#25ADE0" stroke-width="1.8" stroke-miterlimit="10"/>
+                        <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="flex flex-col lg:hidden">
+                        <span class="text-xs text-dark font-normal">Have a question?</span>
+                        <span class="text-primary font-bold">1.877.274.3453</span>
+                    </p>
+                </a>
+                <a href="#"><button class="header__btn bg-orange text-white uppercase text-xs font-bold">New Claim</button></a>
+            </div>
+            <div class="menu-burger hidden md:flex items-center justify-center flex-col">
+                <div class="flex items-end justify-center flex-col">
+                    <span class="line"></span>
+                    <span class="line line-middle"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu absolute top-0 z-50 w-full h-full">
+        <div class="mobile-menu-item bg-primary text-white w-full h-auto">
+            <div class="text-right">
+                <svg class="close-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L11.25 11.25M20.5 20.5L11.25 11.25M11.25 11.25L20.5 2L2 20.5" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <ul class="text-center">
+                <li class="mobile-menu__list"><a href="./our_team.html" class="text-white text-2xl font-bold">Join Our Team</a></li>
+                <li class="mobile-menu__list"><a href="./file_a_claim.html" class="text-white text-2xl font-bold">File A Claim</a></li>
+                <li class="mobile-menu__list"><a href="./types_of_damage.html" class="text-white text-2xl font-bold">Type of Damages</a></li>
+                <li class="mobile-menu__list"><a href="./contact_us.html" class="text-white text-2xl font-bold">Contact Us</a></li>
+                <li class="mobile-menu__list"><a href="#" class="text-white text-2xl font-bold">More</a></li>
+            </ul>
+            <a href="tel:18772743453" class="text-white flex items-center justify-center mt-16">
+                <svg class="mr-3" width="46" height="46" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#fff" stroke-width="1.8" stroke-miterlimit="10"/>
+                    <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="">
+                    <span class="text-lg">Have a question?</span>
+                    <p class="text-2xl font-bold">1.877.274.3453</p>
+                </div>
+            </a>
+            <a href="#"><button class="mobile-menu__btn bg-orange text-white uppercase text-xl font-bold w-full">New Claim</button></a>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <div class="container mt-14 md:mt-4">
+        <div class="flex items-center">
+            <a href="../index.html">
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.7516 5.40988L6.2994 0.120466C6.26014 0.0822787 6.21351 0.0519824 6.16218 0.0313112C6.11085 0.0106401 6.05582 0 6.00025 0C5.94467 0 5.88965 0.0106401 5.83832 0.0313112C5.78698 0.0519824 5.74035 0.0822787 5.7011 0.120466L0.248852 5.40988C0.0900103 5.56409 0 5.77356 0 5.99202C0 6.44566 0.379897 6.81448 0.847156 6.81448H1.42163V10.5888C1.42163 10.8162 1.61092 11 1.84521 11H5.15309V8.12141H6.63562V11H10.1553C10.3896 11 10.5789 10.8162 10.5789 10.5888V6.81448H11.1533C11.3784 6.81448 11.5941 6.72838 11.753 6.57288C12.0826 6.25161 12.0826 5.73115 11.7516 5.40988Z" fill="#717171"/>
+                </svg>
+            </a>
+            <svg class="mx-2" width="15" height="5" viewBox="0 0 15 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1768 2.67678C14.2744 2.57915 14.2744 2.42085 14.1768 2.32322L12.5858 0.732233C12.4882 0.634602 12.3299 0.634602 12.2322 0.732233C12.1346 0.829864 12.1346 0.988155 12.2322 1.08579L13.6464 2.5L12.2322 3.91421C12.1346 4.01184 12.1346 4.17014 12.2322 4.26777C12.3299 4.3654 12.4882 4.3654 12.5858 4.26777L14.1768 2.67678ZM0 2.75H14V2.25H0V2.75Z" fill="#717171"/>
+            </svg>
+            <span class="text-sm text-gray">File a claim</span>
+        </div>
+    </div>
+
+    <div class="file relative">
+        <img src="../assets/img/png/water.png" alt="" class="water absolute top-100 left-0 -z-1 xl:hidden">
+        <img src="../assets/img/png/tornado.png" alt="" class="water absolute top-80 right-0 -z-1 xl:hidden">
+        <div class="container">
+            <div class="text-dark relative">
+                <p class="file__title font-bold poppins">File a claim</p>
+
+                <img src="../assets/img/png/file-a-claim.png" alt="" class="file-item__img absolute xl:hidden">
+            </div>
+
+            <div class="file-item relative">
+                <div class="file-item-title">
+                    <p class="file-item-title__text text-dark sm:text-base font-semibold w-5/6 poppins">File A New Claim</p>
+                    <svg class="toggle-file__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                    </svg>
+                </div>
+                <div class="file-item-info text-dark text-dark font-normal">
+                    <p class="mb-2 pr-14 lg:pr-0">All you need to do is make that first initial phone call; no loss is too small; our inspection is free and we are happy to advise you on all matters. A licensed and bonded public adjuster will come to your residence or place of business at no cost to you. We will examine your insurance policy, discuss your loss and begin to note all information needed to prepare a specialized “ insurance industry estimate, using the latest paid prices in the current market” in order for you to receive the largest settlement possible</p>
+                    <p class="pr-14 lg:pr-0">As your personal public adjusters we will ask you basic questions. When was the first time you noticed the loss; the date. What caused the loss(a broken pipe, heavy rains etc.) What were your first steps to try and stop the loss from continuing to damage your home or place of work? Turning off your main water line, putting a tarp over the opening on the roof, are some of the simple actions and answers that are expected by your insurer</p>
+                    
+                    <div class="text-center mt-8 lg:mt-6">
+                        <p class="font-medium text-dark poppins">If you are ready to file please Contact us iFile <br> Claims today</p>
+                        <a href="tel: 18772743453" class="flex items-center justify-center text-lg text-primary py-1 font-bold">
+                            <svg class="mr-2" width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                        <p class="text-sm font-light text-dark">Free Consultation Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-item relative">
+                <div class="file-item-title">
+                    <p class="file-item-title__text text-dark sm:text-base font-semibold w-5/6 poppins">Denied Claims</p>
+                    <svg class="toggle-file__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                    </svg>
+                </div>
+                <div class="file-item-info text-dark text-dark font-normal">
+                    <div class="pr-44 lg:pr-0">
+                        <p class="uppercase font-semibold mb-3">WAS YOUR CLAIM DENIED?</p>
+                        <p class="mb-3">If your damage claim for your home or business was denied, you’re not out of options. We can help you file an accurate revised claim to get the money you need for repairs.</p>
+                        <p class="uppercase font-semibold mb-3">THE KNOWLEDGE TO COLLECT</p>
+                        <p class="mb-3">Often claims are denied due to errors or oversights on your initial estimate. Our highly trained estimators have experience reopening previously denied claims with great success. If your initial claim was denied, you need an expert estimator to evaluate your insurance policy coverage and represent you in a professional manner.</p>
+                        <p class="uppercase font-semibold mb-3">DETAILED ESTIMATES</p>
+                        <p class="">Our estimators are specially trained to provide highly detailed estimate breakdowns to insurance companies that are based on current market value for both materials and labor. This knowledge is essential for ensuring you get the most money available for your claim, and makes it easier for your insurance company to understand the full scope of the damage your home or business sustained.</p>
+                    </div>
+                    
+                    <div class="text-center mt-8 lg:mt-6">
+                        <p class="font-medium text-dark poppins">Contact us today</p>
+                        <a href="tel: 18772743453" class="flex items-center justify-center text-lg text-primary py-1 font-bold">
+                            <svg class="mr-2" width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                        <p class="text-sm font-light text-dark">Free Consultation Available</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="file-item">
+                <div class="file-item-title">
+                    <p class="file-item-title__text text-dark sm:text-base font-semibold w-5/6 poppins">Reopen Claim</p>
+                    <svg class="toggle-file__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                    </svg>
+                </div>
+                <div class="file-item-info text-dark text-dark font-normal">
+                    <div class="pr-14 lg:pr-0">
+                        <p class="uppercase font-semibold mb-3">READY TO REOPEN YOUR CLAIM?</p>
+                        <p class="mb-3">Receiving a denial letter in response to a loss is always a disappointment to a property owner. Policy premiums are very highly priced, carry large deductibles and a rise in cost every year. Insuring our properties is one of the largest overhead expenses in our budget. We purchase our Insurance agreement policy in good faith, believing that whenever we may suffer a loss, our insurance company will reciprocate and give us a “just claims settlement.”</p>
+                        <p class="uppercase font-semibold mb-3">DON’T GIVE UP ON YOUR CLAIM</p>
+                        <p class="mb-3">We imagine that an industry of such wealth and magnitude will treat their policyholders respectfully and honestly. After all, we have entered into a lawful agreement with them. We expect them to pay a claim that deserves to be paid. How often do most residential owners or commercial property owners actually file a claim? Once or twice in a lifetime? Certainly, it is unexpected when the denial letter is received. Often with no understandable reason given for the denial.</p>
+                        <p class="uppercase font-semibold mb-3">WE’LL FIGHT FOR WHAT’S FAIR</p>
+                        <p class="">iFile Claims Public Adjusters is happy to review your case and read your letter of denial to see what would be the best course to take. We have handled many denials and have been able to secure the funds the <span class="font-semibold">INSURED</span> was looking forward to. Nine out of ten times a denial will get paid. Most times with more money than the property owner ever expected to receive. So join all of our clients who use iFile Claims Public Adjusters and give yourself another opportunity to submit your claim and get your fair settlement. You certainly have nothing to lose, only to gain!</p>
+                    </div>
+                    
+                    <div class="text-center mt-8 lg:mt-6">
+                        <p class="font-medium text-dark poppins">Contact us today</p>
+                        <a href="tel: 18772743453" class="flex items-center justify-center text-lg text-primary py-1 font-bold">
+                            <svg class="mr-2" width="20" height="20" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9647 29.0428L27.6269 21.4618C27.2327 21.1036 26.7148 20.9126 26.1825 20.929C25.6501 20.9455 25.145 21.1681 24.7738 21.55L19.8654 26.5979C18.6839 26.3723 16.3087 25.6318 13.8638 23.193C11.4188 20.746 10.6783 18.3646 10.4589 17.1914L15.5026 12.281C15.885 11.91 16.108 11.4047 16.1244 10.8722C16.1409 10.3397 15.9495 9.82172 15.5908 9.42782L8.01186 1.092C7.653 0.696864 7.15424 0.457184 6.6215 0.423864C6.08877 0.390544 5.56403 0.56621 5.15873 0.913553L0.707765 4.73072C0.353146 5.08662 0.141486 5.5603 0.112935 6.0619C0.0821677 6.57469 -0.504457 18.7215 8.91436 28.1444C17.1312 36.3592 27.4238 36.9602 30.2585 36.9602C30.6728 36.9602 30.9272 36.9479 30.9948 36.9438C31.4964 36.9157 31.9698 36.7031 32.324 36.3469L36.1391 31.8939C36.4878 31.4899 36.6648 30.9656 36.6322 30.4329C36.5996 29.9002 36.3601 29.4013 35.9647 29.0428Z" fill="#24AEE0"/>
+                            </svg>
+                            1.877.274.3453
+                        </a>
+                        <p class="text-sm font-light text-dark">Free Consultation Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contract">
+        <div class="container text-dark">
+            <p class="text-center poppins text-4xl font-bold md:text-2xl">ONLINE CONTRACT</p>
+            <p class="text-center">Fill out the form below to start your claim today.</p>
+            <div class="contract-title poppins font-semibold">GENERAL INFORMATION</div>
+
+            <form action="#" class="form">
+                <div class="flex justify-between items-end lg:flex-col">
+                    <div class="form-box">
+                        <label for="firsName" class="form__lab">
+                            Full Name
+                            <input type="text" class="form__inp" id="firsName" name="first-name" placeholder="First name" required>
+                        </label>
+                    </div>
+                    <div class="form-box">
+                        <label for="lastname" class="form__lab">
+                            <input type="text" class="form__inp mt-0.5" id="lastname" name="last-name" placeholder="Last name" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <label for="phone" class="form__lab">
+                        Phone
+                        <input type="number" class="form__inp" id="phone" name="phone" placeholder="(***) ***-****" required>
+                    </label>
+                </div>
+                <div class="flex justify-between items-end lg:flex-col">
+                    <div class="form-box">
+                        <label for="email" class="form__lab">
+                            Email:
+                            <p class="font-normal mt-2">We'll send a PDF of your contract to this email.</p>
+                            <input type="email" class="form__inp" id="email" name="email" placeholder="Enter email address" required>
+                        </label>
+                    </div>
+                    <div class="form-box"> 
+                        <label for="confirm" class="form__lab">
+                            <input type="email" class="form__inp" id="confirm" name="confirm" placeholder="Confirm email address" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="font-medium">Is there a second homeowner?</p>
+                    <p class="font-light mb-7">If someone else owns the home with you, please select "Yes" to enter their details.</p>
+                        <label for="no" class="flex items-center justify-between form__rad">No
+                            <input type="radio" id="no" name="homeowner" class="ml-5" required>
+                        </label>
+                        <label for="yes" class="form__radflex items-center justify-between">Yes
+                            <input type="radio" id="yes" name="homeowner" class="ml-5" required>
+                        </label>
+                </div>
+                <div class="contract-title poppins font-semibold">LOSS INFORMATION</div>
+                <div class="flex justify-between items-start lg:flex-col">
+                    <div class="">
+                        <p class="form__lab mb-3">Date of Loss:</p>
+                        <div class="flex">
+                            <div class="form__select">
+                                <select name="month" id="month" required>
+                                    <option value="0" disabled selected>Month</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                    <option value="Months">Months</option>
+                                </select>
+                            </div>
+                            <div class="form__select mx-2">
+                                <select name="day" id="day" required>
+                                    <option value="0" disabled selected>Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="form__select">
+                                <select name="" id="" required>
+                                    <option value="0" disabled selected>Year</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-8 lg:mt-6">
+                            <p class="font-medium">Type of Claim:</p>
+                            <div class="flex flex-col mt-3">
+                                <label for="Emergency" class="form__rad1 flex items-center justify-between">Emergency
+                                    <input type="radio" id="Emergency" name="typeOfClaim" class="ml-5" required>
+                                </label>
+                                <label for="Non-Emergency" class="form__rad1 flex items-center justify-between">Non-Emergency
+                                    <input type="radio" id="Non-Emergency" name="typeOfClaim" class="ml-5" required>
+                                </label>
+                                <label for="Supplemental" class="form__rad1 flex items-center justify-between">Supplemental
+                                    <input type="radio" id="Supplemental" name="typeOfClaim" class="ml-5" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-box lg:mt-4">
+                        <label for="cause" class="form__lab">
+                            <p class="mb-3">Cause of Loss:</p>
+                            <input type="email" class="form__inp form_inp" id="cause" name="confirm" placeholder="Ex: “Mold on base boards and ceiling ..." required>
+                        </label>
+                    </div>
+                </div>
+                <div class="contract-title poppins font-semibold">INSURANCE INFORMATION</div>
+                <div class="flex justify-between lg:flex-col">
+                    <div class="form-box">
+                        <label for="insuranceCompany" class="form__lab">
+                            Insurance Company:
+                            <input type="text" class="form__inp" id="insuranceCompany" name="insuranceCompany" placeholder="Enter insurance company" required>
+                        </label>
+                    </div>
+                    <div class="form-box flex flex-col justify-between">
+                        <label for="policyNumber" class="form__lab">
+                            Policy Number:
+                            <input type="number" class="form__inp" id="policyNumber" name="policyNumber" placeholder="Enter policy number" required>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <p class="font-semibold mb-8">The following terms and conditions form part of the agreement between the parties:</p>
+                    <ul class="form__list">
+                        <li>In consideration for the above described services, the <span class="font-semibold">INSURED</span> expressly agrees to pay <span class="font-semibold"><span class="font-semibold">ADJUSTING CO. </span> </span> the percentage of <span class="font-semibold">_______% </span> from all proceeds of all funds received in the settlement of his/her/their insurance claim regardless of whether the loss is settled or paid by the insurance company as a result of adjustment, mediation, appraisal, arbitration, lawsuit or otherwise on all coverages applicable under the described policy or any other applicable policy. <span class="font-semibold"><span class="font-semibold">INSURED</span></span> understands that it may be necessary to incur professional fees in order to properly adjust the above referenced claim. These fees may include, but are not limited to, the use of a Professional Engineer, Attorney, Insurance Claim Appraiser, Umpire, Industrial Hygienist etc. <span class="font-semibold"><span class="font-semibold">INSURED</span></span> understands and agrees that such professional fees will be incurred pursuant to <span class="font-semibold"><span class="font-semibold">ADJUSTING CO. </span>'s DISCRETION,</span> without the necessity of <span class="font-semibold"><span class="font-semibold">INSURED</span>’s</span> authorization, and that <span class="font-semibold">INSURED</span> agrees to pay <span class="font-semibold">ADJUSTING CO</span> said professional fees from the insurance proceeds paid by the insurance company.</li>
+                        <li><span class="font-semibold"><span class="font-semibold">INSURED</span></span> hereby authorizes and requests that the insurance company include the name of the <span class="font-semibold"><span class="font-semibold">ADJUSTING CO. </span></span> as a payee on all checks or drafts issued by the insurance company. In the event the insurance company fails to include the <span class="font-semibold">ADJUSTING CO. </span> on the check or draft, the <span class="font-semibold">INSURED</span> hereby grants <span class="font-semibold"><span class="font-semibold">ADJUSTING CO. </span></span> a lien on the recovered proceeds received by the <span class="font-semibold"><span class="font-semibold">INSURED</span></span> to the extent of the fee <span class="font-semibold">due <span class="font-semibold">ADJUSTING CO. </span></span>' pursuant to this agreement. Moreover, this contract gives power to the      to deposit checks received from the insurance claim into <span class="font-semibold">ADJUSTING CO. </span>'s escrow account until such time as same clears.</li>
+                        <li><span class="font-semibold">INSURED</span> agrees to make payment to <span class="font-semibold">ADJUSTING CO. </span> within five (5) days of receipt of any funds, recovery or benefit for any reason including settlement, appraisal, judgment, and transfer of property or payment</li>
+                        <li>In addition, I/We as the <span class="font-semibold">INSURED</span> authorizes the mortgage company and/or bank to release a check for the percentage of ___% to <span class="font-semibold">ADJUSTING CO. </span>, as the only payee since they have rendered their services to me/us and I/We wish to settle their fee in advance should funds be disbursed partially and/or in payments.</li>
+                        <li><span class="font-semibold">ADJUSTING CO. </span> has not made any representations or warranties to <span class="font-semibold">INSURED</span> regarding the outcome of the claim.</li>
+                        <li>It is clearly understood that this is a contingency fee contract between <span class="font-semibold">INSURED</span> and <span class="font-semibold">ADJUSTING CO. </span></li>
+                        <li><span class="font-semibold">ADJUSTING CO. </span> agrees not to accept any settlement without discussion and approval from <span class="font-semibold">INSURED</span>. <span class="font-semibold">INSURED</span>'s endorsement on any proceeds check will be deemed to be an agreement with the terms and conditions of any related settlement. The <span class="font-semibold">INSURED</span> agrees that all proceed checks be mailed to <span class="font-semibold">ADJUSTING CO. </span></li>
+                        <li><span class="font-semibold">INSURED</span> is hereby advised of your right of counsel, and choice thereof, to represent you, and that such choice is to be made solely by you. Although <span class="font-semibold">ADJUSTING CO. </span> may utilize the advice of counsel in the performance of its business operations, there will be no attorney-client relationship with you and <span class="font-semibold">ADJUSTING CO. </span>'s counsel.</li>
+                        <li><span class="font-semibold">INSURED</span> agrees that <span class="font-semibold">ADJUSTING CO. </span> has authority to request appraisal on behalf of the <span class="font-semibold">INSURED</span>.</li>
+                        <li><span class="font-semibold">INSURED</span> stipulates that the claim and documents presented to <span class="font-semibold">ADJUSTING CO. </span> or to the insurer by <span class="font-semibold">INSURED</span> are not fraudulent and that <span class="font-semibold">INSURED</span> is acting in good faith and in compliance with the laws of Florida.</li>
+                        <li><span class="font-semibold">INSURED</span> agrees to give <span class="font-semibold">ADJUSTING CO. </span> Power of Attorney to endorse proceed checks on their behalf.</li>
+                        <li>This agreement shall be binding upon the estate of the <span class="font-semibold">INSURED</span> in the event of his/her death.</li>
+                        <li>The choice of venue for all claims arising out of or related to this contract is Miami-Dade County, Florida. The substantive law to be applied is Florida law. The prevailing party in any action shall be entitled to reasonable attorney's fees and costs and <span class="font-semibold">ADJUSTING CO. </span> shall be entitled to costs of collections. <span class="font-semibold">INSURED</span> agrees to indemnify <span class="font-semibold">ADJUSTING CO. </span> for all fraud claims.</li>
+                        <li>A computer or faxed signature shall be deemed the same as an original signature and the undersigned stipulates and agrees that they have the authority to enter into this agreement as the <span class="font-semibold">INSURED</span>.</li>
+                        <li class="font-semibold">You, the <span class="font-semibold">INSURED</span>, may cancel this contract for any reason without penalty or obligation to you within 10 days after the date of this contract by providing notice to A1 Property Damage Claims Agency, Inc., D/B/A Century Public Adjusters by submitted in writing and sent by certified mail, return receipt requested, or other form of mailing that provides proof thereof, at the address specified in the contract.</li>
+                        <li>By signing below, the <span class="font-semibold">INSURED</span> acknowledges he/she/they understand(s) and accept(s) the terms of this agreement and that all information provided herein is accurate.</li>
+                    </ul>
+                    <i class="font-semibold mt-3 block">Pursuant to s.817.234, Florida Statutes, any person who, with the intent to injure, defraud, or deceive any insurer or <span class="font-semibold">INSURED</span>, prepares, presents, or causes to be presented a proof of loss or estimate of cost or repair of damaged property in support of a claim under an insurance policy knowing that the proof of loss or estimate of claim or repairs contains any false, incomplete or misleading information concerning any fact or thing material to the claim commits a felony of the third degree, punishable as provided in s.775.082, s.775.083, or s.775.084, Florida Statutes.</i>
+                </div>
+                <div class="sign-below mt-9">
+                    <p class="">Insured - Signature:</p>
+                    <p class="mt-2">Please sign below:</p>
+                    <div class="sign-below-item"></div>
+                    <div class="text-right w-full mt-2">
+                        <svg class="refresh" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="24" height="24" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_29_1209" transform="scale(0.0416667)"/>
+                            </pattern>
+                            <image id="image0_29_1209" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAC9klEQVRIie2V0UtbdxTHP6c3RuKSraxpaNdikhJxtKE0QaRV8C4sbHO2ICxDsv/gwh5mhvrq44Th88jDXnwToXTIAiMjL2YMRJyUsSFZFtyQLOiQTht68e7soRFuNUl9G4N94Tz8vvfc8znnnh9c+F//tqSN5wOarrMHCANXgVeBPuAp8ASoAzXguBPAOG2kUqlbtVrtCvAHcM0wjDFVvQ74gZ5WWk/rfMUwjKiqHgF/tQN4ThuTk5M3SqWSAVwELjuOA0AsFuu1LKs/EAj0HBwc2Pl8/rdKpfLMcZxe4B7wI/DTSwEuXQYIBoOelZWVkbGxsbCIrANHwCu5XO7DtbW1nUwm893e3t4xcKs1xe/nBQAwNzcXNk2zBDwSkb9PfFX1mKb5YH19fXJwcHDVtm0NhULDjUajjmsnF14GmJmZ+UVEqu7iACJyLCIPI5HI58vLy0mARqNxIRKJxLpOkEqltFwup9zezs7Oa9lsdpsXb9cJ6LFt29uxWKy3Uqk8i0ajN2u12s8dO1bVsKrebxPBLu945ufnc0BmYGAg+0IDbfKjLf8JsNexk1MqFou5arXqdxzHtizrs46JoVDoAyCTTCbfPW9xAFV9W1U/VdVP3P6ZJWez2asA9Xr9YrvnLvUAN05CRH4VkYci8mVXQDqd9gHs7u46fr//ZpeOvQsLC7eBpDumpqYGuwJM09xOJBJ9AM1m803gUjuAiBzNzs4aS0tLt93+yMjI9a6AQCDwTT6fTwA4joPX630LiHH2QoiIbFmW9bjTlG0BItIcGhr6anV19S6AbdsC3AHuA8M8/xTDwAPgzuHhoQJMT09fOxegBSlNTEz8sLW19V48Hve17F6gn+dL7Qe8APF43LexsfHO4uJiuFAo3DtTq9t4qmratv1xuVzeLRQKtWKxuL+5ufk0kUj0pdPpS+Pj45HR0dE3vF7vFyLyrap+tL+/fxQMBh+dC9CC+ID3gbut7l8H/gSqwPfA1yLSdOUHRKTtv+G/qX8Ak0cYJI+jRuQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sm:text-center mt-8">
+                    <button class="form__btn team__btn bg-orange text-white uppercase text-lg font-bold uppercase" type="submit">submit contract</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-item w-full flex justify-between sm:flex-col sm:justify-center sm:items-center">
+                <li class="sm:mb-4"><a href="./our_team.html" class="text-gray text-sm font-medium hover:text-white transition-all">Join Our Team</a></li>
+                <li class="sm:mb-4"><a href="./file_a_claim.html" class="text-gray text-sm font-medium hover:text-white transition-all">File A Claim</a></li>
+                <li class="sm:mb-4"><a href="./types_of_damage.html" class="text-gray text-sm font-medium hover:text-white transition-all">Type of Damages</a></li>
+                <li class="sm:mb-4"><a href="./contact_us.html" class="text-gray text-sm font-medium hover:text-white transition-all">Contact Us</a></li>
+                <li class="sm:mb-4"><a href="./faq.html" class="text-gray text-sm font-medium hover:text-white transition-all">FAQ</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">More</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Privacy policy</a></li>
+                <li><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Terms of Use</a></li>
+            </ul>
+
+            <div class="flex items-center justify-between flex-wrap sm:flex-col">
+                <a href="../index.html">
+                    <img loading="lazy" src="../assets/img/png/logo-footer.png" alt="logo.png" class="">
+                </a>
+                <p class="text-sm text-gray sm:hidden">© 2000-2022, All Rights Reserved</p>
+                <div class="flex items-center sm:mt-4 flex-wrap justify-center">
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l1.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l2.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l3.png" alt="brend" class="">
+                    </a>
+                    <a href="#">
+                        <img loading="lazy" src="../assets/img/png/f-l4.png" alt="brend" class="">
+                    </a>
+                </div>
+                <p class="text-sm text-gray hidden sm:block text-center mt-4">© 2000-2022, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/file.js"></script>
+    
+</body>
+</html>

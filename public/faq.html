@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/plugins/tailwind.css">
+    <link rel="stylesheet" href="../assets/styles/css/main.css">
+</head>
+<body class="relative">
+    <header class="header">
+        <div class="container flex items-center justify-between">
+            <div class="logo lg:w-1/6 md:w-1/3 sm:w-1/2">
+                <a href="../index.html" class="lg:w-full">
+                    <img loading="lazy" src="../assets/img/png/logo.png" alt="logo.png" class="lg:w-full">
+                </a>
+            </div>
+            <ul class="flex items-center justify-between w-2/5 lg:w-1/2 md:hidden">
+                <li class=""><a href="./our_team.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Join Our Team</a></li>
+                <li class=""><a href="./file_a_claim.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">File A Claim</a></li>
+                <li class=""><a href="./types_of_damage.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Type of Damages</a></li>
+                <li class=""><a href="./contact_us.html" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">Contact Us</a></li>
+                <li class=""><a href="#" class="text-dark text-sm lg:text-xs font-normal hover:text-primary transition-all">More</a></li>
+            </ul>
+            <div class="flex items-center md:hidden">
+                <a href="tel:18772743453" class="flex items-center mr-7">
+                    <svg class="mr-4 md:mr-1" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#25ADE0" stroke-width="1.8" stroke-miterlimit="10"/>
+                        <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#25ADE0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="flex flex-col lg:hidden">
+                        <span class="text-xs text-dark font-normal">Have a question?</span>
+                        <span class="text-primary font-bold">1.877.274.3453</span>
+                    </p>
+                </a>
+                <a href="#"><button class="header__btn bg-orange text-white uppercase text-xs font-bold">New Claim</button></a>
+            </div>
+            <div class="menu-burger hidden md:flex items-center justify-center flex-col">
+                <div class="flex items-end justify-center flex-col">
+                    <span class="line"></span>
+                    <span class="line line-middle"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu absolute top-0 z-50 w-full h-full">
+        <div class="mobile-menu-item bg-primary text-white w-full h-auto">
+            <div class="text-right">
+                <svg class="close-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L11.25 11.25M20.5 20.5L11.25 11.25M11.25 11.25L20.5 2L2 20.5" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <ul class="text-center">
+                <li class="mobile-menu__list"><a href="./our_team.html" class="text-white text-2xl font-bold">Join Our Team</a></li>
+                <li class="mobile-menu__list"><a href="./file_a_claim.html" class="text-white text-2xl font-bold">File A Claim</a></li>
+                <li class="mobile-menu__list"><a href="./types_of_damage.html" class="text-white text-2xl font-bold">Type of Damages</a></li>
+                <li class="mobile-menu__list"><a href="./contact_us.html" class="text-white text-2xl font-bold">Contact Us</a></li>
+                <li class="mobile-menu__list"><a href="#" class="text-white text-2xl font-bold">More</a></li>
+            </ul>
+            <a href="tel:18772743453" class="text-white flex items-center justify-center mt-16">
+                <svg class="mr-3" width="46" height="46" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.455 28.995C31.455 29.535 31.335 30.09 31.08 30.63C30.825 31.17 30.495 31.68 30.06 32.16C29.325 32.97 28.515 33.555 27.6 33.93C26.7 34.305 25.725 34.5 24.675 34.5C23.145 34.5 21.51 34.14 19.785 33.405C18.06 32.67 16.335 31.68 14.625 30.435C12.9 29.175 11.265 27.78 9.705 26.235C8.16 24.675 6.765 23.04 5.52 21.33C4.29 19.62 3.3 17.91 2.58 16.215C1.86 14.505 1.5 12.87 1.5 11.31C1.5 10.29 1.68 9.315 2.04 8.415C2.4 7.5 2.97 6.66 3.765 5.91C4.725 4.965 5.775 4.5 6.885 4.5C7.305 4.5 7.725 4.59 8.1 4.77C8.49 4.95 8.835 5.22 9.105 5.61L12.585 10.515C12.855 10.89 13.05 11.235 13.185 11.565C13.32 11.88 13.395 12.195 13.395 12.48C13.395 12.84 13.29 13.2 13.08 13.545C12.885 13.89 12.6 14.25 12.24 14.61L11.1 15.795C10.935 15.96 10.86 16.155 10.86 16.395C10.86 16.515 10.875 16.62 10.905 16.74C10.95 16.86 10.995 16.95 11.025 17.04C11.295 17.535 11.76 18.18 12.42 18.96C13.095 19.74 13.815 20.535 14.595 21.33C15.405 22.125 16.185 22.86 16.98 23.535C17.76 24.195 18.405 24.645 18.915 24.915C18.99 24.945 19.08 24.99 19.185 25.035C19.305 25.08 19.425 25.095 19.56 25.095C19.815 25.095 20.01 25.005 20.175 24.84L21.315 23.715C21.69 23.34 22.05 23.055 22.395 22.875C22.74 22.665 23.085 22.56 23.46 22.56C23.745 22.56 24.045 22.62 24.375 22.755C24.705 22.89 25.05 23.085 25.425 23.34L30.39 26.865C30.78 27.135 31.05 27.45 31.215 27.825C31.365 28.2 31.455 28.575 31.455 28.995Z" stroke="#fff" stroke-width="1.8" stroke-miterlimit="10"/>
+                    <path d="M26.25 15C26.25 14.1 25.545 12.72 24.495 11.595C23.535 10.56 22.26 9.75 21 9.75" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 15C31.5 9.195 26.805 4.5 21 4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="">
+                    <span class="text-lg">Have a question?</span>
+                    <p class="text-2xl font-bold">1.877.274.3453</p>
+                </div>
+            </a>
+            <a href="#"><button class="mobile-menu__btn bg-orange text-white uppercase text-xl font-bold w-full">New Claim</button></a>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <div class="container mt-14 md:mt-4">
+        <div class="flex items-center">
+            <a href="../index.html">
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.7516 5.40988L6.2994 0.120466C6.26014 0.0822787 6.21351 0.0519824 6.16218 0.0313112C6.11085 0.0106401 6.05582 0 6.00025 0C5.94467 0 5.88965 0.0106401 5.83832 0.0313112C5.78698 0.0519824 5.74035 0.0822787 5.7011 0.120466L0.248852 5.40988C0.0900103 5.56409 0 5.77356 0 5.99202C0 6.44566 0.379897 6.81448 0.847156 6.81448H1.42163V10.5888C1.42163 10.8162 1.61092 11 1.84521 11H5.15309V8.12141H6.63562V11H10.1553C10.3896 11 10.5789 10.8162 10.5789 10.5888V6.81448H11.1533C11.3784 6.81448 11.5941 6.72838 11.753 6.57288C12.0826 6.25161 12.0826 5.73115 11.7516 5.40988Z" fill="#717171"/>
+                </svg>
+            </a>
+            <svg class="mx-2" width="15" height="5" viewBox="0 0 15 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.1768 2.67678C14.2744 2.57915 14.2744 2.42085 14.1768 2.32322L12.5858 0.732233C12.4882 0.634602 12.3299 0.634602 12.2322 0.732233C12.1346 0.829864 12.1346 0.988155 12.2322 1.08579L13.6464 2.5L12.2322 3.91421C12.1346 4.01184 12.1346 4.17014 12.2322 4.26777C12.3299 4.3654 12.4882 4.3654 12.5858 4.26777L14.1768 2.67678ZM0 2.75H14V2.25H0V2.75Z" fill="#717171"/>
+            </svg>
+            <span class="text-sm text-gray">Fequently asked questions</span>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="container">
+            <div class="faq__title font-bold poppins text-dark relative">Fequently asked <br> questions
+                <img src="../assets/img/png/faq.png" alt="faq.png" class="faq-item__img absolute right-0 top-0">
+            </div>
+
+            <div class="faq-item relative">
+                <div class="faq-item-title">
+                    <p class="faq-item-title__text poppins text-dark sm:text-base font-semibold w-5/6">WHY HIRE A PUBLIC ADJUSTER?</p>
+                    <svg class="toggle-faq__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                    </svg>
+                </div>
+                <div class="faq-item-info">
+                    <p class="text-dark mt-4"> If you have just suffered an insured loss resulting from a pipe burst, a fire, hurricane or some other traumatic event, it's probably not the best time to take a crash course on how to properly present an insurance claim. You may be dealing with a multitude of other matters, such as finding housing or an alternate business location, dealing with the emotional trauma of a loss or simply going about your daily responsibilities, like work and family. God forbid you should also be dealing with injuries or the unthinkable in connection with the event. Consider these three points. It is up to you to prove the extent of your loss to the Insurance Company...</p>
+                    <p class="text-dark mt-4">A typical insurance policy is dozens of pages long and contains numerous provisions and stipulations – written in technical and legal terms. Additionally, it contains various forms and endorsements which are constantly changing from year to year and which add or exclude coverage from your policy. </p>
+                    <p class="text-dark mt-4">Most people have difficulty understanding what can appear to be a lot of legal mumbo jumbo. For example, did you know that in order for the insurance company to compensate you for your loss, there are certain conditions which YOU must satisfy? Did you know that your failure to satisfy these policy requirements could reduce your settlement amount or even cause your claim to be denied? Don't feel bad. Most people don't know these things. A qualified and trained public insurance adjuster whom you trust can help make sure you meet all of the policy conditions, document your loss and get your claim paid. </p>
+                    <p class="text-dark mt-4">No matter how organized you and your documentation is, filing and receiving payment on a claim is a time consuming and tedious process. If you are not sufficiently organized and your loss documented, you may not realize the compensation you have paid premiums for and are entitled to receive.A licensed, bonded and qualified Public Adjuster has the experience, knowledge and expertise to obtain your maximum entitlements under your policy</p>
+                    <p class="text-dark mt-4">Remember that the insurance company adjuster is representing the insurance company. It is not uncommon for the insurance company to misinterpret their own insurance policy or forget to apply case law or Florida Statutes which supersede their own policy. A public insurance adjuster will know current laws as they affect insurance losses and how to best represent you. A public insurance adjuster has resources to help you through the maze of estimating, documenting, and filing your insurance claims.</p>
+                </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+                <div class="faq-item faq-item-middle">
+                    <div class="faq-item-title">
+                        <p class="text-2xl text-dark sm:text-base font-semibold w-5/6">WHAT IS A PUBLIC ADJUSTER?</p>
+                        <svg class="toggle-faq__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item-info">
+                        <p class="text-dark mt-4">A Public Insurance Adjuster is a licensed and bonded insurance professional who assists policyholders with the complicated insurance claim process when they suffer an insured loss. Public Insurance Adjusters who belong to the Florida Association of Public Insurance Adjusters adhere to a strict Code of Ethics and are able to take advantage of the best quality, public adjuster specific, continuing education in the country.</p>
+                        <p class="text-dark mt-4">Additionally, FAPIA members have a network of resources available to best assist policyholders in the handling of insurance claims. There are three types of adjusters licensed by the State of Florida: Insurance Company Adjuster - is employed by an insurance company to represent the insurance company in dealing with your insurance claim. </p>
+                        <p class="text-dark mt-4">The insurance company adjusters main responsibility if to protect the interests of the insurance company. Independent Adjuster - is hired by insurance companies to represent them in dealing with you, your loss and damages. The independent adjuster's main responsibility is to protect the interests of the insurance company. </p>
+                        <p class="text-dark mt-4">Public Adjuster - is the only Adjuster specifically licensed by the State of Florida to represent you, the Insured. The Public Adjusters main responsibility is to protect you and your interests in claims against a loss with the Insurance Company.</p>
+                    </div>
+                </div>
+                <div class="faq-item faq-item-middle">
+                    <div class="faq-item-title">
+                        <p class="text-2xl text-dark sm:text-base font-semibold w-5/6">HOW MUCH DO PUBLIC ADJUSTERS CHARGE?</p>
+                        <svg class="toggle-faq__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item-info">
+                        <p class="text-dark mt-4">Public Adjusters charge a percentage of the settlement for their service to you. The Public Adjuster is not paid until you are paid. There are no upfront fees for their services.</p>
+                        <p class="text-dark mt-4">Percentages vary from adjuster to adjuster, so it is best to shop for the best adjuster for you. The maximum percentage that a public adjuster in Florida can charge for a claim is 20% of the claim paid after you sign the contract with them. </p>
+                        <p class="text-dark mt-4">In the event of a declared emergency by the Governor's office, that fee is reduced to 10% for any claim made in the first year after the date of loss. After the first year, the maximum amount that can be charged reverts back to 20%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+                <div class="faq-item faq-item-middle">
+                    <div class="faq-item-title">
+                        <p class="text-2xl text-dark sm:text-base font-semibold w-5/6">HOW LONG DOES THE PROCESS TAKE?</p>
+                        <svg class="toggle-faq__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item-info">
+                        <p class="text-dark mt-4">On average, it takes about 2 to 4 months. </p>
+                        <p class="text-dark mt-4">However, it can take less or more, depending on how soon the insurance company gives us the settlement we are going for.</p>
+                    </div>
+                </div>
+                <div class="faq-item faq-item-middle">
+                    <div class="faq-item-title">
+                        <p class="text-2xl text-dark sm:text-base font-semibold w-5/6">HOW LONG AFTER A LOSS CAN I FILE A CLAIM?</p>
+                        <svg class="toggle-faq__btn cursor-pointer" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20V0H12V20H10Z" fill="#3D3D3D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.90735e-06 9L22 9L22 11L-2.00352e-06 11L-1.90735e-06 9Z" fill="#3D3D3D"/>
+                        </svg>
+                    </div>
+                    <div class="faq-item-info">
+                        <p class="text-dark mt-4">Although claims can be reported any time, policies usually say that homeowners have 2 weeks to report any loss that happens at their property. </p>
+                        <p class="text-dark mt-4">Windstorm (like tropical storm, tornado, hurricane, etc.) damage is an exception which you can report up to 3 years if there was a state of emergency declared in the area. However, do ontact us to look at options if you think you are over the mentioned periods</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-item w-full flex justify-between sm:flex-col sm:justify-center sm:items-center">
+                <li class="sm:mb-4"><a href="./our_team.html" class="text-gray text-sm font-medium hover:text-white transition-all">Join Our Team</a></li>
+                <li class="sm:mb-4"><a href="./file_a_claim.html" class="text-gray text-sm font-medium hover:text-white transition-all">File A Claim</a></li>
+                <li class="sm:mb-4"><a href="./types_of_damage.html" class="text-gray text-sm font-medium hover:text-white transition-all">Type of Damages</a></li>
+                <li class="sm:mb-4"><a href="./contact_us.html" class="text-gray text-sm font-medium hover:text-white transition-all">Contact Us</a></li>
+                <li class="sm:mb-4"><a href="./faq.html" class="text-gray text-sm font-medium hover:text-white transition-all">FAQ</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">More</a></li>
+                <li class="sm:mb-4"><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Privacy policy</a></li>
+                <li><a href="#" class="text-gray text-sm font-medium hover:text-white transition-all">Terms of Use</a></li>
+            </ul>
+
+            <div class="flex items-center justify-between flex-wrap sm:flex-col">
+                <a href="../index.html">
+                    <img loading="lazy" src="../assets/img/png/logo-footer.png" alt="logo.png" class="">
+                </a>
+                <p class="text-sm text-gray sm:hidden">© 2000-2022, All Rights Reserved</p>
+                <div class="flex items-center sm:mt-4 flex-wrap justify-center">
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l1.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l2.png" alt="brend" class="">
+                    </a>
+                    <a href="#" class="mr-2">
+                        <img loading="lazy" src="../assets/img/png/f-l3.png" alt="brend" class="">
+                    </a>
+                    <a href="#">
+                        <img loading="lazy" src="../assets/img/png/f-l4.png" alt="brend" class="">
+                    </a>
+                </div>
+                <p class="text-sm text-gray hidden sm:block text-center mt-4">© 2000-2022, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/faq.js"></script>
+    
+</body>
+</html>
